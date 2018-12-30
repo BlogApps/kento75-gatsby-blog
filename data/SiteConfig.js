@@ -3,8 +3,8 @@ module.exports = {
   siteTitleShort: "Kt Blog", // Short site title for homescreen (PWA). Preferably should be under 12 characters to prevent truncation.
   siteTitleAlt: "Kento74 Blog", // Alternative site title for SEO.
   siteLogo: "/logos/logo-1024.png", // Logo used for SEO and manifest.
-  siteUrl: "https://Kento75.github.io", // Domain of your website without pathPrefix.
-  pathPrefix: "/kento75-gatsby-blog", // Prefixes all links. For cases when deployed to example.github.io/gatsby-material-starter/.
+  siteUrl: "https://kento75blog.netlify.com", // Domain of your website without pathPrefix.
+  pathPrefix: "", // Prefixes all links. For cases when deployed to example.github.io/gatsby-material-starter/.
   fixedFooter: false, // Whether the footer component is fixed, i.e. always visible
   siteDescription: "A GatsbyJS stater with Material design in mind.", // Website description used for RSS feeds/meta description tag.
   siteRss: "/rss.xml", // Path to the RSS file.
