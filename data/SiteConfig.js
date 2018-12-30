@@ -10,7 +10,7 @@ module.exports = {
   siteRss: "/rss.xml", // Path to the RSS file.
   siteFBAppID: "", // FB Application ID for using app insights
   siteGATrackingID: "", // Tracking code ID for google analytics.
-  disqusShortname: "", // Disqus shortname. 後でDisqusに登録する
+  disqusShortname: "kento-gatsby-blog-disqus", // Disqus shortname. 後でDisqusに登録する
   postDefaultCategoryID: "Tech", // Default category for posts.
   dateFromFormat: "YYYY-MM-DD", // Date format used in the frontmatter.
   dateFormat: "DD/MM/YYYY", // Date format for display.
