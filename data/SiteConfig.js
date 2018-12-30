@@ -6,7 +6,7 @@ module.exports = {
   siteUrl: "https://kento75blog.netlify.com", // Domain of your website without pathPrefix.
   pathPrefix: "/gatsby-material-starter", // Prefixes all links. For cases when deployed to example.github.io/gatsby-material-starter/.
   fixedFooter: false, // Whether the footer component is fixed, i.e. always visible
-  siteDescription: "A GatsbyJS stater with Material design in mind.", // Website description used for RSS feeds/meta description tag.
+  siteDescription: "Kento75 Tech Blog", // Website description used for RSS feeds/meta description tag.
   siteRss: "/rss.xml", // Path to the RSS file.
   siteFBAppID: "", // FB Application ID for using app insights
   siteGATrackingID: "", // Tracking code ID for google analytics.
@@ -16,10 +16,10 @@ module.exports = {
   dateFormat: "DD/MM/YYYY", // Date format for display.
   userName: "Kento75", // Username to display in the author segment.
   userTwitter: "", // Optionally renders "Follow Me" in the UserInfo segment.
-  userLocation: "North Pole, Earth", // User location to display in the author segment.
-  userAvatar: "https://api.adorable.io/avatars/150/test.png", // User avatar to display in the author segment.
+  userLocation: "日本, 埼玉県", // User location to display in the author segment.
+  userAvatar: "/assets/kento75.jpg", // User avatar to display in the author segment.
   userDescription:
-    "Yeah, I like animals better than people sometimes... Especially dogs. Dogs are the best. Every time you come home, they act like they haven't seen you in a year. And the good thing about dogs... is they got different dogs for different people.", // User description to display in the author segment.
+    "都内で働くエンジニア フロントエンドからインフラまで幅広くやってます。 好きな技術はReactとFirebase です。 あと、好きな女優は新垣結衣です。", // User description to display in the author segment.
   // Links to social profiles/projects you want to display in the author segment/navigation bar.
   userLinks: [
     {
@@ -34,7 +34,7 @@ module.exports = {
     },
     {
       label: "Email",
-      url: "kento2github@gmail.com",
+      url: "mailto:kento2github@gmail.com",
       iconClassName: "fa fa-envelope"
     }
   ],

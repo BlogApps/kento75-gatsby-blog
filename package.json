@@ -1,8 +1,8 @@
 {
-  "name": "gatsby-starter-material",
+  "name": "kento-gatsby-blog",
   "description": "GatsbyJS Material Blog theme.",
-  "version": "2.0.0",
-  "author": "Ruben Harutyunyan <vagr9k@gmail.com>",
+  "version": "1.0.0",
+  "author": "Kento75 <kento2github@gmail.com>",
   "dependencies": {
     "font-awesome": "^4.7.0",
     "gatsby": "2.0.40",
