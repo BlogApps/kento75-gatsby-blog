@@ -17,7 +17,16 @@ class About extends Component {
               alt={config.userName}
             />
             <CardText>
-              <p className="about-text md-body-1">{config.userDescription}</p>
+              <p className="about-text md-body-1">
+                {/* 改行コードごとにbrタグを生成 */}
+                {config.userDescription.split("\n").map(message => (
+                  <>
+                    {message}
+                    <br />
+                  </>
+                ))
+              }
+              </p>
             </CardText>
             <UserLinks labeled config={config} />
           </div>

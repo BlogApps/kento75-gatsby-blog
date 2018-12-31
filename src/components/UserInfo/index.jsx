@@ -56,7 +56,13 @@ class UserInfo extends Component {
               <FontIcon iconClassName="fa fa-map-marker" />
             </IconSeparator>
           )}
-          <p>{userDescription && userDescription}</p>
+          {/* 改行コードごとにbrタグを生成 */}
+          {userDescription && (userDescription.split("\n").map(message => (
+            <p>
+              {message}
+              <br />
+            </p>
+          )))}
           {userLinksElement}
         </CardText>
       </Card>
