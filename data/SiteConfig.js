@@ -1,7 +1,7 @@
 module.exports = {
   siteTitle: "Kento75 Blog", // Site title.
   siteTitleShort: "Kt Blog", // Short site title for homescreen (PWA). Preferably should be under 12 characters to prevent truncation.
-  siteTitleAlt: "Kento74 Blog", // Alternative site title for SEO.
+  siteTitleAlt: "Kento75 Blog", // Alternative site title for SEO.
   siteLogo: "/logos/kento75.jpg", // Logo used for SEO and manifest.
   siteUrl: "https://kento75blog.netlify.com", // Domain of your website without pathPrefix.
   pathPrefix: "/post", // Prefixes all links. For cases when deployed to example.github.io/post/.
@@ -14,7 +14,7 @@ module.exports = {
   // disqusShortname: "kento-gatsby-blog-disqus", // Disqus shortname. 後でDisqusに登録する
   postDefaultCategoryID: "Tech", // Default category for posts.
   dateFromFormat: "YYYY-MM-DD", // Date format used in the frontmatter.
-  dateFormat: "DD/MM/YYYY", // Date format for display.
+  dateFormat: "YYYY/MM/DD", // Date format for display.
   userName: "Kento75", // Username to display in the author segment.
   userTwitter: "", // Optionally renders "Follow Me" in the UserInfo segment.
   userLocation: "日本, 埼玉県", // User location to display in the author segment.
