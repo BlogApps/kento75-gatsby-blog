@@ -25,13 +25,18 @@ module.exports = {
   userLinks: [
     {
       label: "GitHub",
-      url: "https://github.com/MyBlogApps/kento75-gatsby-blog",
+      url: "https://github.com/Kento75",
       iconClassName: "fa fa-github"
     },
     {
       label: "Twitter",
       url: "https://twitter.com/Kento751",
       iconClassName: "fa fa-twitter"
+    },
+    {
+      label: "Qiita",
+      url: "https://qiita.com/Kento75",
+      iconClassName: "fa fa-rss"
     },
     {
       label: "Email",
