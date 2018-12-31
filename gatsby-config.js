@@ -105,7 +105,6 @@ module.exports = {
         }`
       }
     },
-    /**
     {
       resolve: "gatsby-plugin-manifest",
       options: {
@@ -130,7 +129,6 @@ module.exports = {
         ]
       }
     },
-     */
     "gatsby-plugin-offline",
     {
       resolve: "gatsby-plugin-feed",
