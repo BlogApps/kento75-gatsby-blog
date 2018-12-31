@@ -105,14 +105,14 @@ module.exports = {
         }`
       }
     },
+    /**
     {
       resolve: "gatsby-plugin-manifest",
       options: {
         name: config.siteTitle,
         short_name: config.siteTitleShort,
         description: config.siteDescription,
-        // start_url: config.pathPrefix,
-        start_url: "/",
+        start_url: config.pathPrefix,
         background_color: "#e0e0e0",
         theme_color: "#c62828",
         display: "minimal-ui",
@@ -130,6 +130,7 @@ module.exports = {
         ]
       }
     },
+     */
     "gatsby-plugin-offline",
     {
       resolve: "gatsby-plugin-feed",
