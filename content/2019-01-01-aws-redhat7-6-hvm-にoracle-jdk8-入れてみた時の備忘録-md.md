@@ -17,9 +17,11 @@ AWS環境にアプリケーション・Webサーバーを作成する際に設�
 以下の手順で Oracle JDK のインストールから環境構築まで、RedHat以外の Linux でもインストールとパスの設定ができると思います。（実行環境では、一時的にセキュリティグループの設定による制限はなく、サーバーはインターネットに接続できる状態です。）
 
 ```
-# とりあえずアップデートする$ sudo yum repolist all$ sudo yum update
+# とりあえずアップデートする
+$ sudo yum repolist all
+$ sudo yum update
 ```
-
+  
 tar.gzまたはrpmファイルからの２通りの方法があるとは思いますが、今回はrpmファイルで実施します。
 
 ```
@@ -32,7 +34,7 @@ $ sudo wget --no-check-certificate --no-cookies --header "Cookie:oraclelicense=a
 # rpmをインストールする
 $ sudo rpm -ivh jdk-8u192-linux-x64.rpm  
 ```
-
+  
 インストールが正常に完了しているか確認します。
 
 ```
@@ -44,7 +46,7 @@ Java HotSpot(TM) 64-Bit Server VM (build 25.192-b12, mixed mode)
 # コンパイラーの確認
 $ javac -versionjavac 1.8.0_192
 ```
-
+  
 インストールに問題がなければ、Javaの実態がどこにあるのかも確認しておきます。
 
 ```
@@ -61,8 +63,7 @@ lrwxrwxrwx. 1 root root 41 Dec 10 11:39 /etc/alternatives/java -> /usr/java/jdk1
 ```
 
 実態は /usr/java/jdk1.8.0_192-amd64/jre/bin/java に作成されるようです。
-
-実態のパスは JAVA_HOME の設定に使用します。
+実態のパスは JAVA_HOME の設定に使用します。  
 
 全ユーザーに設定したいので、 /etc/profile に JAVA_HOME の設定を記述します。
 
