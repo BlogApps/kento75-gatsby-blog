@@ -4,7 +4,7 @@ module.exports = {
   siteTitleAlt: "Kento74 Blog", // Alternative site title for SEO.
   siteLogo: "/logos/kento75.jpg", // Logo used for SEO and manifest.
   siteUrl: "https://kento75blog.netlify.com", // Domain of your website without pathPrefix.
-  pathPrefix: "/gatsby-material-starter", // Prefixes all links. For cases when deployed to example.github.io/gatsby-material-starter/.
+  pathPrefix: "/post", // Prefixes all links. For cases when deployed to example.github.io/post/.
   fixedFooter: false, // Whether the footer component is fixed, i.e. always visible
   siteDescription: "Kento75 Tech Blog", // Website description used for RSS feeds/meta description tag.
   siteRss: "/rss.xml", // Path to the RSS file.
@@ -18,7 +18,7 @@ module.exports = {
   userName: "Kento75", // Username to display in the author segment.
   userTwitter: "", // Optionally renders "Follow Me" in the UserInfo segment.
   userLocation: "日本, 埼玉県", // User location to display in the author segment.
-  userAvatar: "/assets/kento75.jpg", // User avatar to display in the author segment.
+  userAvatar: "/logos/kento75.jpg", // User avatar to display in the author segment.
   userDescription:
     "都内で働くエンジニア フロントエンドからインフラまで幅広くやってます。 好きな技術はReactとFirebase です。 あと、好きな女優は新垣結衣です。", // User description to display in the author segment.
   // Links to social profiles/projects you want to display in the author segment/navigation bar.
