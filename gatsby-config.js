@@ -15,7 +15,7 @@ module.exports = {
       image_url: `${urljoin(
         config.siteUrl,
         config.pathPrefix
-      )}/logos/kento75.jpg`,
+      )}/logos/kento75-circle.png`,
       author: config.userName,
       copyright: config.copyright
     }
@@ -118,12 +118,12 @@ module.exports = {
         display: "minimal-ui",
         icons: [
           {
-            src: "/logos/kento75.jpg",
+            src: "/logos/kento75-circle.png",
             sizes: "192x192",
             type: "image/jpg"
           },
           {
-            src: "/logos/kento75.jpg",
+            src: "/logos/kento75-circle.png",
             sizes: "512x512",
             type: "image/jpg"
           }
