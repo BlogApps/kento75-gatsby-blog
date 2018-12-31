@@ -2,4 +2,4 @@ User-agent: *
 Disallow: */tags/
 Disallow: */categories/
 
-sitemap: https://https://kento75blog.netlify.com/gatsby-material-starter/sitemap.xml
+sitemap: https://https://kento75blog.netlify.com/post/sitemap.xml
