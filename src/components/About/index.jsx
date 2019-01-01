@@ -19,11 +19,11 @@ class About extends Component {
             <CardText>
               <p className="about-text md-body-1">
                 {/* 改行コードごとにbrタグを生成 */}
-                {config.userDescription.split("\n").map(message => (
-                  <>
+                {config.userDescription.split("\n").map((message, rowNo) => (
+                  <span key={rowNo}>
                     {message}
                     <br />
-                  </>
+                  </span>
                 ))
               }
               </p>

@@ -57,8 +57,8 @@ class UserInfo extends Component {
             </IconSeparator>
           )}
           {/* 改行コードごとにbrタグを生成 */}
-          {userDescription && (userDescription.split("\n").map(message => (
-            <p>
+          {userDescription && (userDescription.split("\n").map((message, rowNo) => (
+            <p key={rowNo}>
               {message}
               <br />
             </p>

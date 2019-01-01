@@ -15,6 +15,7 @@ module.exports = {
   postDefaultCategoryID: "Tech", // Default category for posts.
   dateFromFormat: "YYYY-MM-DD", // Date format used in the frontmatter.
   dateFormat: "YYYY/MM/DD", // Date format for display.
+  addTime: 9,  // Netlifyではタイムゾーンが設定できないため一律 9時間プラスする
   userName: "Kento75", // Username to display in the author segment.
   userTwitter: "", // Optionally renders "Follow Me" in the UserInfo segment.
   userLocation: "日本, 埼玉県", // User location to display in the author segment.
