@@ -1,5 +1,6 @@
 import React from "react";
 import PostPreview from "../PostPreview";
+import TagList from "../TagList";
 
 class PostListing extends React.Component {
   getPostList() {
@@ -25,6 +26,9 @@ class PostListing extends React.Component {
           {postList.map(post => (
             <PostPreview key={post.title} postInfo={post} />
           ))}
+        </div>
+        <div className="md-grid md-cell--4 mobile-fix">
+          <TagList postList={postList}/>
         </div>
       </div>
     );
