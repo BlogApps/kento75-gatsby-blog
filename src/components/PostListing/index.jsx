@@ -1,6 +1,8 @@
 import React from "react";
+import Card from "react-md/lib/Cards/Card";
 import PostPreview from "../PostPreview";
 import TagList from "../TagList";
+import "./PostListing.scss";
 
 class PostListing extends React.Component {
   getPostList() {
@@ -28,7 +30,10 @@ class PostListing extends React.Component {
           ))}
         </div>
         <div className="md-grid md-cell--4 mobile-fix">
-          <TagList postList={postList}/>
+          <Card className="tagList-area">
+            <TagList postList={postList}/>
+            <br/>
+          </Card>
         </div>
       </div>
     );

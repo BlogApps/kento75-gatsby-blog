@@ -1,0 +1,13 @@
+.post-preview-tagList {
+    margin: 20px 2px 0;
+}
+
+.post-tagList-container {
+    margin-top: 6px;
+    display: flex;
+    flex-flow: row wrap;
+    align-content: center;
+    justify-content: center;
+    // align-items: center;
+    align-items: flex-start;
+}
