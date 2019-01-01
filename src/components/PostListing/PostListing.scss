@@ -1,6 +1,11 @@
 .tagList-area {
-  margin-top: 12px;
-  margin-bottom: 12px;
-  width: 90%;
-  background-color: #ffffff;
+  width: 100%;
+  margin: auto;
+  padding: 0 !important;
+
+  @media (min-width: 840px - 1px) {
+    margin-top: 12px;
+    margin-bottom: 12px;
+    width: 90%;
+  }
 }
