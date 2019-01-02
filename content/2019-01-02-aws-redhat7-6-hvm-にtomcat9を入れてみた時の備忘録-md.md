@@ -1,7 +1,7 @@
 ---
 title: AWS RedHat7.6(HVM)にTomcat9を入れてみた時の備忘録
 date: 2019-01-02T11:13:50.169Z
-cover: /assets/tomcat.jpg
+cover: /assets/tomcat.png
 slug: AWS RedHat7.6(HVM)にTomcat9を入れてみた時の備忘録
 category: プログラミング
 tags:
@@ -174,5 +174,5 @@ $ sudo systemctl enable tomcat
 $ sudo systemctl status tomcat
 ```
 
-以上で RedHat7.6 への Tomcat9 のセットアップが完了しました。
+以上で RedHat7.6 への Tomcat9 のセットアップが完了しました。  
 JDK のセットアップと比べて手順が多く面倒でした。(-｡-;
