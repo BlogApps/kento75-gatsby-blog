@@ -39,6 +39,11 @@ $phone-status-bar-height: 24px - 12px;
         max-width: 100%;
         word-wrap: break-word;
         white-space: normal;
+
+        @media (max-width: 840px - 1px) {
+            font-weight: bold;
+            font-size: 18px;
+        }
     }
 
     .post {

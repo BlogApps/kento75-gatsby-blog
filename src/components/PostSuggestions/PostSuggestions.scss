@@ -26,6 +26,15 @@
     .arrow-nav {
       margin-top: 15px;
     }
+
+    h6 {
+      @media (max-width: 840px - 1px) {
+        text-indent: -9999px;
+        white-space: nowrap;
+        overflow: hidden;
+      }
+    }
+
   }
 
   .secondary-color {
