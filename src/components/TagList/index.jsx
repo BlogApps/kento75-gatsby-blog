@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import _ from "lodash";
 import { Link } from "gatsby";
 import Chip from "react-md/lib/Chips";
+import { Badge } from "react-md";
 import "./TagList.scss";
 
 class TagList extends Component {
@@ -19,7 +20,9 @@ class TagList extends Component {
               style={{ textDecoration: "none" }}
               to={`/tags/${_.kebabCase(tag)}`}
             >
-              <Chip label={tag} className="post-preview-tagList" />
+              <Badge badgeContent={4}>
+                <Chip label={tag} className="post-preview-tagList" />
+              </Badge>
             </Link>
         ))}
       </div>
