@@ -1,18 +1,18 @@
 module.exports = {
   siteTitle: "Kento75 Blog", // Site title.
-  siteTitleShort: "Kt Blog", // Short site title for homescreen (PWA). Preferably should be under 12 characters to prevent truncation.
+  siteTitleShort: "雑食系フロントエンドエンジニアのブログ", // Short site title for homescreen (PWA). Preferably should be under 12 characters to prevent truncation.
   siteTitleAlt: "Kento75 Blog", // Alternative site title for SEO.
   siteLogo: "/logos/kento75.jpg", // Logo used for SEO and manifest.
   siteUrl: "https://kento75blog.netlify.com", // Domain of your website without pathPrefix.
   pathPrefix: "/post", // Prefixes all links. For cases when deployed to example.github.io/post/.
   fixedFooter: false, // Whether the footer component is fixed, i.e. always visible
-  siteDescription: "Kento75 Tech Blog", // Website description used for RSS feeds/meta description tag.
+  siteDescription: "雑食系フロントエンドエンジニアのブログ", // Website description used for RSS feeds/meta description tag.
   siteRss: "/rss.xml", // Path to the RSS file.
   siteFBAppID: "", // FB Application ID for using app insights
   siteGATrackingID: "", // Tracking code ID for google analytics.
   // ↓ コメント一覧の取得がなぜができない（原因不明）ためしばらく無効化
   // disqusShortname: "kento-gatsby-blog-disqus", // Disqus shortname. 後でDisqusに登録する
-  postDefaultCategoryID: "Tech", // Default category for posts.
+  postDefaultCategoryID: "プログラミング", // Default category for posts.
   dateFromFormat: "YYYY-MM-DD", // Date format used in the frontmatter.
   dateFormat: "YYYY/MM/DD", // Date format for display.
   addTime: 9,  // Netlifyではタイムゾーンが設定できないため一律 9時間プラスする
@@ -43,6 +43,11 @@ module.exports = {
       label: "Email",
       url: "mailto:kento2github@gmail.com",
       iconClassName: "fa fa-envelope"
+    },
+    {
+      label: "RSS",
+      url: "https://kento75blog.netlify.com/rss.xml",
+      iconClassName: "fa fa-rss"
     }
   ],
   copyright: "Copyright © 2018. Kento75" // Copyright string for the footer of the website and RSS feed.
