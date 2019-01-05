@@ -37,7 +37,7 @@ module.exports = {
     {
       label: "Qiita",
       url: "https://qiita.com/Kento75",
-      iconClassName: "fa fa-rss"
+      iconClassName: "fa fa-bold"
     },
     {
       label: "Email",
