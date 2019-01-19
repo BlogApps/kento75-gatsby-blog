@@ -17,7 +17,7 @@ module.exports = {
   dateFormat: "YYYY/MM/DD", // Date format for display.
   addTime: 9,  // Netlifyではタイムゾーンが設定できないため一律 9時間プラスする
   userName: "Kento75", // Username to display in the author segment.
-  userTwitter: "", // Optionally renders "Follow Me" in the UserInfo segment.
+  userTwitter: "Kento751", // Optionally renders "Follow Me" in the UserInfo segment.
   userLocation: "日本, 埼玉県", // User location to display in the author segment.
   userAvatar: "/logos/kento75.jpg", // User avatar to display in the author segment.
   userDescription:
