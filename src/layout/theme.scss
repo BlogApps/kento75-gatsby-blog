@@ -5,6 +5,10 @@ $md-secondary-color: $md-red-800;
 //$md-tertiary-color: $md-grey-300;
 $md-tertiary-color: #faf0e6;
 
+body {
+    background-color: $md-tertiary-color;
+}
+
 .main-container,
 .darker-background {
     background-color: $md-tertiary-color;
