@@ -21,7 +21,7 @@ module.exports = {
   userLocation: "日本, 埼玉県", // User location to display in the author segment.
   userAvatar: "/logos/kento75.jpg", // User avatar to display in the author segment.
   userDescription:
-    "都内で働くエンジニア\nフロントエンドからインフラまで幅広くやってます。\n好きな技術は React と Firebase です。\nあと、好きな女優は新垣結衣です。\nQiita でも記事を書いていますので、いいねもらえると嬉しいです(^_^)", // User description to display in the author segment.
+    "都内で働くエンジニア フロントエンドからインフラまで幅広くやってます。 好きな技術は React と Firebase です。\nQiita でも記事を書いていますので、いいねもらえると嬉しいです(^_^)\nあと、好きな女優は新垣結衣です。", // User description to display in the author segment.
   // Links to social profiles/projects you want to display in the author segment/navigation bar.
   userLinks: [
     {

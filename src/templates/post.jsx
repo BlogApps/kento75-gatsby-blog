@@ -45,7 +45,6 @@ export default class PostTemplate extends React.Component {
     const { mobile } = this.state;
     const { slug } = this.props.pageContext;
     const expanded = !mobile;
-    const postOverlapClass = mobile ? "post-overlap-mobile" : "post-overlap";
     const postNode = this.props.data.markdownRemark;
     const post = postNode.frontmatter;
     if (!post.id) {
@@ -58,7 +57,7 @@ export default class PostTemplate extends React.Component {
     const coverHeight = mobile ? 180 : 350;
     return (
       <Layout location={this.props.location}>
-        <div className="post-page md-grid md-grid--no-spacing">
+        <div className="post-page md-grid">
           <Helmet>
             <title>{`${post.title} | ${config.siteTitle}`}</title>
             <link rel="canonical" href={`${config.siteUrl}${post.id}`} />
@@ -70,7 +69,7 @@ export default class PostTemplate extends React.Component {
             coverClassName="md-grid md-cell--9 post-cover"
           />
           <div
-            className={`md-grid md-cell--9 post-page-contents mobile-fix ${postOverlapClass}`}
+            className={"md-grid md-cell--9 post-page-contents mobile-fix"}
           >
             <Card className="md-grid md-cell md-cell--12 post">
               <CardText className="post-body">
