@@ -11,6 +11,7 @@ import PostCover from "../components/PostCover";
 import PostInfo from "../components/PostInfo";
 import SocialLinks from "../components/SocialLinks";
 import PostSuggestions from "../components/PostSuggestions";
+import HeaderTitle from "../components/HeaderTitle";
 import SEO from "../components/SEO";
 import config from "../../data/SiteConfig";
 import "./b16-tomorrow-dark.css";
@@ -56,7 +57,7 @@ export default class PostTemplate extends React.Component {
 
     const coverHeight = mobile ? 180 : 350;
     return (
-      <Layout location={this.props.location}>
+      <Layout location={this.props.location} title={<HeaderTitle />}>
         <div className="post-page md-grid">
           <Helmet>
             <title>{`${post.title} | ${config.siteTitle}`}</title>

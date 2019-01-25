@@ -3,6 +3,7 @@ import Helmet from "react-helmet";
 import { graphql } from "gatsby";
 import Layout from "../layout";
 import PostListing from "../components/PostListing";
+import HeaderTitle from "../components/HeaderTitle";
 import config from "../../data/SiteConfig";
 
 export default class TagTemplate extends React.Component {
@@ -13,7 +14,7 @@ export default class TagTemplate extends React.Component {
     return (
       <Layout
         location={this.props.location}
-        title={`Tagged in ${tag.charAt(0).toUpperCase() + tag.slice(1)}`}
+        title={<HeaderTitle/>}
       >
         <div className="tag-container">
           <Helmet>

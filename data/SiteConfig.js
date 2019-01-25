@@ -1,7 +1,7 @@
 module.exports = {
-  siteTitle: "Kento75 Blog", // Site title.
+  siteTitle: "overreact", // Site title.
   siteTitleShort: "雑食系フロントエンドエンジニアのブログ", // Short site title for homescreen (PWA). Preferably should be under 12 characters to prevent truncation.
-  siteTitleAlt: "Kento75 Blog", // Alternative site title for SEO.
+  siteTitleAlt: "overreact", // Alternative site title for SEO.
   siteLogo: "/logos/kento75.jpg", // Logo used for SEO and manifest.
   siteUrl: "https://kento75blog.netlify.com", // Domain of your website without pathPrefix.
   pathPrefix: "/post", // Prefixes all links. For cases when deployed to example.github.io/post/.
@@ -10,6 +10,7 @@ module.exports = {
   siteRss: "/rss.xml", // Path to the RSS file.
   siteFBAppID: "", // FB Application ID for using app insights
   siteGATrackingID: "", // Tracking code ID for google analytics.
+  headerTitle: "overreact",
   // ↓ コメント一覧の取得がなぜができない（原因不明）ためしばらく無効化
   // disqusShortname: "kento-gatsby-blog-disqus", // Disqus shortname. 後でDisqusに登録する
   postDefaultCategoryID: "プログラミング", // Default category for posts.
