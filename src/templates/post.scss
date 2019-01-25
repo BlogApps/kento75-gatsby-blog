@@ -6,7 +6,7 @@ $phone-status-bar-height: 24px - 12px;
     flex-direction: column;
     align-items: center;
 }
-
+/*
 .post-overlap {
     margin-top: -80px !important;
     z-index: 2;
@@ -16,11 +16,11 @@ $phone-status-bar-height: 24px - 12px;
     margin-top: -20px !important;
     z-index: 2;
 }
-
+*/
 .post-page-contents {
     justify-content: center;
     width: 100%;
-    max-width: 752px;
+    max-width: 70%;
 
     .gatsby-resp-image-wrapper {
         z-index: 6 !important;

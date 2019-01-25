@@ -39,7 +39,8 @@ class PostCover extends Component {
       <div
         style={{
           backgroundImage: `url(${coverURL})`,
-          height: `${coverHeight}px`
+          height: `${coverHeight}px`,
+          width: '100%'
         }}
         className={coverClassName}
       />
