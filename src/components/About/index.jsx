@@ -28,7 +28,6 @@ class About extends Component {
               }
               </p>
             </CardText>
-            <UserLinks labeled config={config} />
           </div>
         </Card>
       </div>
