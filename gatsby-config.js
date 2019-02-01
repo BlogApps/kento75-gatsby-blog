@@ -129,6 +129,7 @@ module.exports = {
         ]
       }
     },
+    "gatsby-plugin-favicon",  // default root /src add a favicon.png
     "gatsby-plugin-offline",
     {
       resolve: "gatsby-plugin-feed",
