@@ -3,7 +3,7 @@ module.exports = {
   siteTitleShort: "雑食系フロントエンドエンジニアのブログ", // Short site title for homescreen (PWA). Preferably should be under 12 characters to prevent truncation.
   siteTitleAlt: "overreact", // Alternative site title for SEO.
   siteLogo: "/logos/kento75.jpg", // Logo used for SEO and manifest.
-  siteUrl: "https://kento75blog.netlify.com", // Domain of your website without pathPrefix.
+  siteUrl: "https://overreact.tk", // Domain of your website without pathPrefix.
   pathPrefix: "/post", // Prefixes all links. For cases when deployed to example.github.io/post/.
   fixedFooter: false, // Whether the footer component is fixed, i.e. always visible
   siteDescription: "雑食系フロントエンドエンジニアのブログ", // Website description used for RSS feeds/meta description tag.
