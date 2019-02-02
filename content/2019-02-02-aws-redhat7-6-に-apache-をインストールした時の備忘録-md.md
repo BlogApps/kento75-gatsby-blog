@@ -1,7 +1,7 @@
 ---
 title: AWS RedHat7.6 に Apache をインストールした時の備忘録
 date: 2019-02-02T02:01:14.787Z
-cover: /assets/apache.jpg
+cover: /assets/apache.png
 slug: AWS RedHat7.6 に Apache をインストールした時の備忘録
 category: プログラミング
 tags:
