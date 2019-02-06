@@ -12,7 +12,7 @@ module.exports = {
   siteGATrackingID: "", // Tracking code ID for google analytics.
   headerTitle: "overreact",
   // ↓ コメント一覧の取得がなぜができない（原因不明）ためしばらく無効化
-  // disqusShortname: "kento-gatsby-blog-disqus", // Disqus shortname. 後でDisqusに登録する
+  disqusShortname: "kento-gatsby-blog-disqus", // Disqus shortname. 後でDisqusに登録する
   postDefaultCategoryID: "プログラミング", // Default category for posts.
   dateFromFormat: "YYYY-MM-DD", // Date format used in the frontmatter.
   dateFormat: "YYYY/MM/DD", // Date format for display.
