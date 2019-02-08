@@ -1,0 +1,30 @@
+.side-about-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  .side-about-img {
+      border-radius: 50%;
+      border: 6px #000000 double;
+      width: 100%;
+      height: auto;
+      margin: 10px 0;
+      @media (max-width: 360px - 1px) {
+          padding: 20px;
+      }
+  }
+
+  .side-about-text {
+      max-width: 640px;
+      margin: 20px 0 !important;
+
+      @media (max-width: 360px - 1px) {
+          margin: 5px 0 !important;
+      }
+  }
+
+  @media (max-width: 920px - 1px) {
+    display: none;
+  }
+
+}
