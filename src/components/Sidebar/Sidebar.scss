@@ -2,11 +2,23 @@
   margin-top: 6px;
   display: flex;
   flex-flow: row wrap;
+  align-items: flex-end;
   align-content: center;
   justify-content: center;
 
   h3.sidebar-menu {
+    text-align: center;
+    border-bottom: 4px double #212121;
+  }
+
+  h3.sidebar-menu:first-child {
     @media (max-width: 920px - 1px) {
+      display: none;
+    }
+  }
+
+  h3.sidebar-menu {
+    @media (max-width: 840px - 1px) {
       display: none;
     }
   }
