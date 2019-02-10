@@ -1,11 +1,16 @@
-.post-preview-tagList {
-    margin: 20px 2px 0;
-}
-
 .post-tagList-container {
-    margin-top: 6px;
-    display: flex;
-    flex-flow: row wrap;
-    align-content: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  max-width: 400px;
+  margin: 20px 5px 5px 5px;
+
+  .post-preview-tagList {
+    margin: 3px;
+  }
+
+  @media(max-width: 840 - 1px) {
+    max-width: 800px;
     justify-content: center;
+  }
 }
