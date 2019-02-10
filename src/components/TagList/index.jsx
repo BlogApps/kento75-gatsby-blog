@@ -1,8 +1,8 @@
 import React, { Component } from "react";
 import _ from "lodash";
 import { Link } from "gatsby";
+import Card from "react-md/lib/Cards/Card";
 import Chip from "react-md/lib/Chips";
-// import { Badge } from "react-md";
 import "./TagList.scss";
 
 class TagList extends Component {
@@ -22,7 +22,7 @@ class TagList extends Component {
             >
               <Chip label={tag} className="post-preview-tagList" />
             </Link>
-        ))}
+          ))}
       </div>
     );
   }

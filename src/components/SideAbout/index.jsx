@@ -8,25 +8,28 @@ class SideAbout extends Component {
   render() {
     return (
       <div className="side-about-container md-grid mobile-fix">
-          <div className="side-about-wrapper">
+        <Card>
+          <h3 className="side-about-title">About</h3>
+          <div className="side-about-img-wrapper">
             <img
               src={config.userAvatar}
               className="side-about-img"
               alt={config.userName}
             />
-            <CardText>
-              <p className="side-about-text md-body-1">
-                {/* 改行コードごとにbrタグを生成 */}
-                {config.userDescription.split("\n").map((message, rowNo) => (
-                  <span key={rowNo}>
-                    {message}
-                    <br />
-                  </span>
-                ))
-              }
-              </p>
-            </CardText>
           </div>
+          <CardText>
+            <p className="side-about-text md-body-1">
+              {/* 改行コードごとにbrタグを生成 */}
+              {config.userDescription.split("\n").map((message, rowNo) => (
+                <span key={rowNo}>
+                  {message}
+                  <br />
+                </span>
+              ))
+            }
+            </p>
+          </CardText>
+        </Card>
       </div>
     );
   }

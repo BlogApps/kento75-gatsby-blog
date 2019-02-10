@@ -8,9 +8,7 @@ class Sidebar extends Component {
     const { postList } = this.props;
     return (
       <div className="sidebar-container">
-        <h3 className="sidebar-menu">About</h3>
         <SideAbout />
-        <h3 className="sidebar-menu">Category</h3>
         <TagList postList={postList} />
       </div>
     )
