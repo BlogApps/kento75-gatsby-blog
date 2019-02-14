@@ -54,11 +54,12 @@ $phone-status-bar-height: 24px - 12px;
         display: flex;
         flex-direction: column;
         justify-content: center;
+        display: table-cell;
 
         .post-meta {
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
+            // display: flex;
+            // flex-direction: column;
+            // justify-content: center;
         }
 
         .post-body {

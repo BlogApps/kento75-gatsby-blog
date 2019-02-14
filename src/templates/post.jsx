@@ -83,6 +83,7 @@ export default class PostTemplate extends React.Component {
                 <SocialLinks
                   postPath={slug}
                   postNode={postNode}
+                  // eslint-disable-next-line react/destructuring-assignment
                   mobile={this.state.mobile}
                 />
               </div>
