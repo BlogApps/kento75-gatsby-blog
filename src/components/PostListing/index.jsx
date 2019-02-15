@@ -28,7 +28,9 @@ class PostListing extends React.Component {
           {postList.map(post => (
             <PostPreview key={post.title} postInfo={post} />
           ))}
-                  <TagList postList={postList} />
+          <span className="tagList-area">
+            <TagList postList={postList} />
+          </span>
         </div>
         {/* <div className="md-grid md-cell--4 mobile-fix">
           <div className="tagList-area">
