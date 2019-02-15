@@ -1,6 +1,7 @@
 import React from "react";
 import PostPreview from "../PostPreview";
-import Sidebar from "../Sidebar";
+//import Sidebar from "../Sidebar";
+import TagList from "../TagList";
 import "./PostListing.scss";
 
 class PostListing extends React.Component {
@@ -27,13 +28,14 @@ class PostListing extends React.Component {
           {postList.map(post => (
             <PostPreview key={post.title} postInfo={post} />
           ))}
+                  <TagList postList={postList} />
         </div>
-        <div className="md-grid md-cell--4 mobile-fix">
+        {/* <div className="md-grid md-cell--4 mobile-fix">
           <div className="tagList-area">
             <Sidebar postList={postList}/>
             <br/>
           </div>
-        </div>
+        </div> */}
       </div>
     );
   }
