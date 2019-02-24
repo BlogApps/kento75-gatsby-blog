@@ -4,3 +4,15 @@
     background-position: 50% 50%;
     padding: 0 !important;
 }
+
+.post-card {
+  margin-bottom: 30px; 
+
+  @media(max-width: 1024 - 1px) {
+    margin-bottom: 20px; 
+  }
+
+  @media(max-width: 640 - 1px) {
+    margin-bottom: 10px; 
+  }
+}
