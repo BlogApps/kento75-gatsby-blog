@@ -4,6 +4,7 @@ $md-primary-color: $md-blue-800;
 $md-secondary-color: $md-red-800;
 //$md-tertiary-color: $md-grey-300;
 $md-tertiary-color: #faf0e6;
+$md-tag-hover-color: $md-red-800;
 
 body {
     background-color: $md-tertiary-color;
@@ -17,4 +18,8 @@ body {
 a:link {
     color: $md-secondary-color;
     text-decoration: none;
+}
+
+.md-chip:hover {
+    background: $md-tag-hover-color;
 }
