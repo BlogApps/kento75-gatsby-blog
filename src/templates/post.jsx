@@ -17,6 +17,8 @@ import config from "../../data/SiteConfig";
 import "./b16-tomorrow-dark.css";
 import "./post.scss";
 
+import ScrollToTopIcon from "../components/ScrollToTopIcon";
+
 export default class PostTemplate extends React.Component {
   constructor(props) {
     super(props);
@@ -95,7 +97,7 @@ export default class PostTemplate extends React.Component {
             />
             {/* <Disqus postNode={postNode} expanded={expanded} /> */}
           </div>
-
+          <ScrollToTopIcon/>
           <PostSuggestions postNode={postNode} />
         </div>
       </Layout>
