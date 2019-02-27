@@ -51,5 +51,5 @@ module.exports = {
       iconClassName: "fa fa-rss"
     }
   ],
-  copyright: "Copyright © 2018. Kento75" // Copyright string for the footer of the website and RSS feed.
+  copyright: "Copyright © 2019. Kento75" // Copyright string for the footer of the website and RSS feed.
 };
