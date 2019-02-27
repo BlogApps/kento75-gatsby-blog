@@ -13,6 +13,7 @@ import SocialLinks from "../components/SocialLinks";
 import PostSuggestions from "../components/PostSuggestions";
 import HeaderTitle from "../components/HeaderTitle";
 import SEO from "../components/SEO";
+import ScrollToTopIcon from "../components/ScrollToTopIcon";
 import config from "../../data/SiteConfig";
 import "./b16-tomorrow-dark.css";
 import "./post.scss";
@@ -95,7 +96,7 @@ export default class PostTemplate extends React.Component {
             />
             {/* <Disqus postNode={postNode} expanded={expanded} /> */}
           </div>
-
+          <ScrollToTopIcon/>
           <PostSuggestions postNode={postNode} />
         </div>
       </Layout>

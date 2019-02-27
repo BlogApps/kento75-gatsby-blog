@@ -5,6 +5,7 @@ import Layout from "../layout";
 import PostListing from "../components/PostListing";
 import HeaderTitle from "../components/HeaderTitle";
 import SEO from "../components/SEO";
+import ScrollToTopIcon from "../components/ScrollToTopIcon";
 import config from "../../data/SiteConfig";
 
 class Index extends React.Component {
@@ -19,6 +20,7 @@ class Index extends React.Component {
           </Helmet>
           <SEO postEdges={postEdges} />
           <PostListing postEdges={postEdges} />
+          <ScrollToTopIcon />
         </div>
       </Layout>
     );
