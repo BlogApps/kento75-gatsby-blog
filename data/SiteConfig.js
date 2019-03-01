@@ -38,8 +38,13 @@ module.exports = {
     {
       label: "Qiita",
       url: "https://qiita.com/Kento75",
-      iconClassName: "fa fa-bold"
+      iconClassName: "fa fa-edit"
     },
+    // {
+    //   label: "SpeakerDeck",
+    //   url: "https://qiita.com/Kento75",
+    //     iconClassName: "fa fa-film"
+    // },
     {
       label: "Email",
       url: "mailto:kento2github@gmail.com",
