@@ -40,7 +40,7 @@
     "react-dom": "^16.6.0",
     "react-helmet": "^5.2.0",
     "react-md": "^1.8.0",
-    "react-reading-progress": "^0.3.0",
+    // "react-reading-progress": "^0.3.0",
     "react-scroll-up-button": "^1.6.4",
     "react-share": "^2.1.0",
     "react-twitter-widgets": "^1.7.1",
