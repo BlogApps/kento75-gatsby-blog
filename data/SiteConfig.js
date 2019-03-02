@@ -40,11 +40,11 @@ module.exports = {
       url: "https://qiita.com/Kento75",
       iconClassName: "fa fa-edit"
     },
-    // {
-    //   label: "SpeakerDeck",
-    //   url: "https://qiita.com/Kento75",
-    //     iconClassName: "fa fa-film"
-    // },
+    {
+      label: "SpeakerDeck",
+      url: "https://speakerdeck.com/kento75",
+        iconClassName: "fa fa-film"
+    },
     {
       label: "Email",
       url: "mailto:kento2github@gmail.com",
