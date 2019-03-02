@@ -7,7 +7,7 @@ import "./Navigation.scss";
 
 class Navigation extends Component {
   render() {
-    const { children, config, LocalTitle, isPost } = this.props;
+    const { children, config, LocalTitle } = this.props;
     const footerLinks = LocalTitle !== "About";
     return (
       <NavigationDrawer

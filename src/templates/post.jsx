@@ -5,7 +5,6 @@ import Card from "react-md/lib/Cards";
 import CardText from "react-md/lib/Cards/CardText";
 import Layout from "../layout";
 import UserInfo from "../components/UserInfo";
-import Disqus from "../components/Disqus";
 import PostTags from "../components/PostTags";
 import PostCover from "../components/PostCover";
 import PostInfo from "../components/PostInfo";
@@ -94,7 +93,6 @@ export default class PostTemplate extends React.Component {
               config={config}
               expanded={expanded}
             />
-            {/* <Disqus postNode={postNode} expanded={expanded} /> */}
           </div>
           <ScrollToTopIcon/>
           <PostSuggestions postNode={postNode} />
