@@ -22,6 +22,12 @@ module.exports = {
   plugins: [
     "gatsby-plugin-react-helmet",
     "gatsby-plugin-lodash",
+    {
+      resolve: 'gatsby-plugin-page-transitions',
+      options: {
+        transitionTime: 500
+    }
+    },
     "gatsby-plugin-sass",
     {
       resolve: "gatsby-source-filesystem",
