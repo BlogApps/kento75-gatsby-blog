@@ -23,7 +23,7 @@ module.exports = {
     "gatsby-plugin-react-helmet",
     "gatsby-plugin-lodash",
     {
-      resolve: 'gatsby-plugin-page-transitions',
+      resolve: 'gatsby-v2-plugin-page-transitions',
       options: {
         transitionTime: 500
     }
