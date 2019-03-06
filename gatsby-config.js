@@ -26,7 +26,7 @@ module.exports = {
       resolve: 'gatsby-v2-plugin-page-transitions',
       options: {
         transitionTime: 500
-    }
+      }
     },
     "gatsby-plugin-sass",
     {

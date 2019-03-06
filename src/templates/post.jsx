@@ -57,7 +57,6 @@ export default class PostTemplate extends React.Component {
 
     const coverHeight = mobile ? 180 : 500;
     return (
-
       <Layout location={this.props.location} title={<HeaderTitle />}>
         <div className="post-page md-grid">
           <Helmet>
