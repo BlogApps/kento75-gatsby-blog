@@ -1,5 +1,6 @@
 import React from "react";
 import Helmet from "react-helmet";
+import PageTransition from 'gatsby-v2-plugin-page-transitions';
 import "font-awesome/scss/font-awesome.scss";
 import Navigation from "../components/Navigation";
 import config from "../../data/SiteConfig";

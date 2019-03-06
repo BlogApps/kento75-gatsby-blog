@@ -1,6 +1,7 @@
 import React from "react";
 import Helmet from "react-helmet";
 import { graphql } from "gatsby";
+import PageTransition from 'gatsby-v2-plugin-page-transitions';
 import Layout from "../layout";
 import PostListing from "../components/PostListing";
 import HeaderTitle from "../components/HeaderTitle";
@@ -12,17 +13,19 @@ class Index extends React.Component {
   render() {
     const postEdges = this.props.data.allMarkdownRemark.edges;
     return (
-      <Layout location={this.props.location} title={<HeaderTitle />}>
-        <div className="index-container">
-          <Helmet>
-            <title>{config.siteTitle}</title>
-            <link rel="canonical" href={`${config.siteUrl}`} />
-          </Helmet>
-          <SEO postEdges={postEdges} />
-          <PostListing postEdges={postEdges} />
-          <ScrollToTopIcon />
-        </div>
-      </Layout>
+      <PageTransition>
+        <Layout location={this.props.location} title={<HeaderTitle />}>
+          <div className="index-container">
+            <Helmet>
+              <title>{config.siteTitle}</title>
+              <link rel="canonical" href={`${config.siteUrl}`} />
+            </Helmet>
+            <SEO postEdges={postEdges} />
+            <PostListing postEdges={postEdges} />
+            <ScrollToTopIcon />
+          </div>
+        </Layout>
+      </PageTransition>
     );
   }
 }
