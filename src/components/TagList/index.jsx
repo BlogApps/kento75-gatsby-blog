@@ -1,7 +1,6 @@
 import React, { Component } from "react";
 import _ from "lodash";
 import { Link } from "gatsby";
-import Card from "react-md/lib/Cards/Card";
 import Chip from "react-md/lib/Chips";
 import "./TagList.scss";
 
