@@ -1,12 +1,11 @@
 @import '~react-md/src/scss/react-md';
 
-//$md-primary-color: $md-grey-400;
 $md-primary-color: $md-blue-800;
 $md-secondary-color: $md-red-800;
-//$md-tertiary-color: $md-grey-300;
-//$md-tertiary-color: #faf0e6;
-$md-tertiary-color: aliceblue;
+$md-tertiary-color: $md-blue-50;
+$md-tag-color: $md-blue-grey-900;
 $md-tag-hover-color: $md-red-800;
+$md-userlink-hover-color: $md-red-900;
 
 body {
     background-color: $md-tertiary-color;
@@ -22,6 +21,19 @@ a:link {
     text-decoration: none;
 }
 
+.md-chip {
+    background: rgba($md-tag-color,0.2);
+}
+
 .md-chip:hover {
+    cursor : pointer;
     background: $md-tag-hover-color;
+}
+
+.md-btn:hover {
+    background: rgba($md-userlink-hover-color,0.3);
+}
+
+.social-icon:hover {
+    cursor : pointer;
 }
