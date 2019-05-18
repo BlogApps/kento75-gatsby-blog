@@ -14,16 +14,14 @@ module.exports = {
   postDefaultCategoryID: "プログラミング", // Default category for posts.
   dateFromFormat: "YYYY-MM-DD", // Date format used in the frontmatter.
   dateFormat: "YYYY/MM/DD", // Date format for display.
-  addTime: 9,  // Netlifyではタイムゾーンが設定できないため一律 9時間プラスする
+  addTime: 9, // Netlifyではタイムゾーンが設定できないため一律 9時間プラスする
   userName: "Kento75", // Username to display in the author segment.
   userTwitter: "Kento751", // Optionally renders "Follow Me" in the UserInfo segment.
   userLocation: "日本, 埼玉県", // User location to display in the author segment.
   userAvatar: "/logos/kento75.jpg", // User avatar to display in the author segment.
-  userDescription:
-    "都内で働くエンジニア フロントエンドからインフラまで幅広くやってます。 好きな技術は React と Firebase です。\nQiita でも記事を書いていますので、いいねもらえると嬉しいです(^_^)\nあと、好きな女優は新垣結衣です。", // User description to display in the author segment.
+  userDescription: "都内で働くエンジニア フロントエンドからインフラまで幅広くやってます。 好きな技術は React と Firebase です。\nQiita でも記事を書いていますので、いいねもらえると嬉しいです(^_^)\nあと、好きな女優は新垣結衣です。", // User description to display in the author segment.
   // Links to social profiles/projects you want to display in the author segment/navigation bar.
-  userLinks: [
-    {
+  userLinks: [{
       label: "GitHub",
       url: "https://github.com/Kento75",
       iconClassName: "fa fa-github"
@@ -41,7 +39,7 @@ module.exports = {
     {
       label: "SpeakerDeck",
       url: "https://speakerdeck.com/kento75",
-        iconClassName: "fa fa-film"
+      iconClassName: "fa fa-film"
     },
     {
       label: "Email",
@@ -52,6 +50,23 @@ module.exports = {
       label: "RSS",
       url: "https://kento75blog.netlify.com/rss.xml",
       iconClassName: "fa fa-rss"
+    }
+  ],
+  aboutPageLinks: [{
+      label: "Linkedin",
+      url: "https://www.linkedin.com/in/kento75-4326a316a"
+    },
+    {
+      label: "Teratail",
+      url: "https://teratail.com/users/Kento75#reply"
+    },
+    {
+      label: "SpeakerDeck",
+      url: "https://speakerdeck.com/kento75"
+    },
+    {
+      label: "FindySkill",
+      url: "https://findy-code.io/share_profiles/rgEQehzENsgyR"
     }
   ],
   copyright: "Copyright © 2019. Kento75" // Copyright string for the footer of the website and RSS feed.
