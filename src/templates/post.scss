@@ -47,15 +47,17 @@ $phone-status-bar-height: 24px - 12px;
 
         @media (max-width: 840px - 1px) {
             font-weight: bold;
-            font-size: 18px;
+            word-wrap: break-word;
         }
     }
 
     .post {
         display: flex;
+        flex-wrap: wrap;
         flex-direction: column;
         justify-content: center;
-        display: table-cell;
+        width: 100%;
+
 
         .post-meta {
             // display: flex;
@@ -65,6 +67,8 @@ $phone-status-bar-height: 24px - 12px;
 
         .post-body {
             max-width: 100%;
+            word-wrap: break-word;
+            white-space: normal;
 
             >h1,
             >h2,
@@ -72,13 +76,47 @@ $phone-status-bar-height: 24px - 12px;
             >h4,
             >h5,
             >h6 {
-                word-wrap: break-word;
-                margin-top: 30px;
-                margin-bottom: 10px !important;
+                @media (max-width: 840px - 1px) {
+                    font-size: 17px;
+                }
             }
 
             li {
                 margin-top: 15px;
+            }
+
+            >div>h1{
+                margin: 0;
+                max-width: 100%;
+                word-wrap: break-word;
+                white-space: normal;
+                @media (max-width: 840px - 1px) {
+                    font-size: 17px;
+                    font-weight: bold;
+                    word-wrap: break-word;
+                }
+            }
+            >div>h2 {
+                margin: 0;
+                max-width: 100%;
+                word-wrap: break-word;
+                white-space: normal;
+                @media (max-width: 840px - 1px) {
+                    font-size: 16px;
+                    font-weight: bold;
+                    word-wrap: break-word;
+                }
+            }
+            >div>h3 {
+                margin: 0;
+                max-width: 100%;
+                word-wrap: break-word;
+                white-space: normal;
+                @media (max-width: 840px - 1px) {
+                    font-size: 15px;
+                    font-weight: bold;
+                    word-wrap: break-word;
+                }
             }
 
             /**
