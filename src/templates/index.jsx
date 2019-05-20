@@ -42,7 +42,7 @@ class Index extends React.Component {
           <Paginator pageContext={this.props.pageContext} />
           <span className="tagList-area">
             <TagList postList={postList} />
-          </span>;
+          </span>
           <ScrollToTopIcon />
         </div>
       </Layout>
