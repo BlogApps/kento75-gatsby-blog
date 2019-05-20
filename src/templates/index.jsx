@@ -1,15 +1,16 @@
-import React from "react";
-import Helmet from "react-helmet";
-import { graphql } from "gatsby";
-import Layout from "../layout";
-import PostListing from "../components/PostListing";
-import HeaderTitle from "../components/HeaderTitle";
-import SEO from "../components/SEO";
-import ScrollToTopIcon from "../components/ScrollToTopIcon";
-import config from "../../data/SiteConfig";
+import React from 'react';
+import Helmet from 'react-helmet';
+import {graphql} from 'gatsby';
+import Layout from '../layout';
+import PostListing from '../components/PostListing';
+import HeaderTitle from '../components/HeaderTitle';
+import SEO from '../components/SEO';
+import ScrollToTopIcon from '../components/ScrollToTopIcon';
+import config from '../../data/SiteConfig';
+import Paginator from '../components/Paginator';
 
 class Index extends React.Component {
-  render() {
+  render () {
     const postEdges = this.props.data.allMarkdownRemark.edges;
     return (
       <Layout location={this.props.location} title={<HeaderTitle />}>
@@ -20,6 +21,7 @@ class Index extends React.Component {
           </Helmet>
           <SEO postEdges={postEdges} />
           <PostListing postEdges={postEdges} />
+          <Paginator pageContext={this.props.pageContext} />
           <ScrollToTopIcon />
         </div>
       </Layout>
@@ -30,10 +32,11 @@ class Index extends React.Component {
 export default Index;
 
 export const pageQuery = graphql`
-  query IndexQuery {
+  query IndexQuery($skip: Int!, $limit: Int!) {
     allMarkdownRemark(
-      limit: 2000
-      sort: { fields: [fields___date], order: DESC }
+      sort: {fields: [fields___date], order: DESC}
+      limit: $limit
+      skip: $skip
     ) {
       edges {
         node {
@@ -41,7 +44,7 @@ export const pageQuery = graphql`
             slug
             date
           }
-          excerpt
+          excerpt(truncate: true)
           timeToRead
           frontmatter {
             title
