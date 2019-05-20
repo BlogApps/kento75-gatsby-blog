@@ -1,5 +1,7 @@
 import React, {Component} from 'react';
 import {Link} from 'gatsby';
+import {Button} from 'react-md/lib/Buttons';
+
 import './Paginator.scss';
 
 class Paginator extends Component {
@@ -13,37 +15,19 @@ class Paginator extends Component {
     const nextPage = (currentPage + 1).toString ();
 
     return (
-      <div>
-        <ul className="paginator-list">
+      <div className="paginator-list">
+        <div>
           {!isFirst &&
             <Link to={prevPage} rel="prev">
-              ← Previous Page
+              <Button raised secondary>← Prev</Button>
             </Link>}
-          {/* {Array.from ({length: numPages}, (_, i) => (
-            <li
-              key={`pagination-number${i + 1}`}
-              style={{
-                margin: 0,
-              }}
-            >
-              <Link
-                to={`/${i === 0 ? '' : i + 1}`}
-                className="paginator-link"
-                style={{
-                  textDecoration: 'none',
-                  color: i + 1 === currentPage ? '#ffffff' : '',
-                  background: i + 1 === currentPage ? '#007acc' : '',
-                }}
-              >
-                {i + 1}
-              </Link>
-            </li>
-          ))} */}
+        </div>
+        <div>
           {!isLast &&
             <Link to={nextPage} rel="next">
-              Next Page →
+              <Button raised secondary>Next →</Button>
             </Link>}
-        </ul>
+        </div>
       </div>
     );
   }
