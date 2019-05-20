@@ -19,7 +19,7 @@ class Paginator extends Component {
             <Link to={prevPage} rel="prev">
               ← Previous Page
             </Link>}
-          {Array.from ({length: numPages}, (_, i) => (
+          {/* {Array.from ({length: numPages}, (_, i) => (
             <li
               key={`pagination-number${i + 1}`}
               style={{
@@ -38,7 +38,7 @@ class Paginator extends Component {
                 {i + 1}
               </Link>
             </li>
-          ))}
+          ))} */}
           {!isLast &&
             <Link to={nextPage} rel="next">
               Next Page →

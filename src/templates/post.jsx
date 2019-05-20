@@ -1,50 +1,50 @@
-import React from "react";
-import Helmet from "react-helmet";
-import { graphql } from "gatsby";
-import Card from "react-md/lib/Cards";
-import CardText from "react-md/lib/Cards/CardText";
-import Layout from "../layout";
-import UserInfo from "../components/UserInfo";
-import PostTags from "../components/PostTags";
-import PostCover from "../components/PostCover";
-import PostInfo from "../components/PostInfo";
-import SocialLinks from "../components/SocialLinks";
-import PostSuggestions from "../components/PostSuggestions";
-import HeaderTitle from "../components/HeaderTitle";
-import SEO from "../components/SEO";
-import ScrollToTopIcon from "../components/ScrollToTopIcon";
-import config from "../../data/SiteConfig";
-import "./b16-tomorrow-dark.css";
-import "./post.scss";
+import React from 'react';
+import Helmet from 'react-helmet';
+import {graphql} from 'gatsby';
+import Card from 'react-md/lib/Cards';
+import CardText from 'react-md/lib/Cards/CardText';
+import Layout from '../layout';
+import UserInfo from '../components/UserInfo';
+import PostTags from '../components/PostTags';
+import PostCover from '../components/PostCover';
+import PostInfo from '../components/PostInfo';
+import SocialLinks from '../components/SocialLinks';
+import PostSuggestions from '../components/PostSuggestions';
+import HeaderTitle from '../components/HeaderTitle';
+import SEO from '../components/SEO';
+import ScrollToTopIcon from '../components/ScrollToTopIcon';
+import config from '../../data/SiteConfig';
+import './b16-tomorrow-dark.css';
+import './post.scss';
 
 export default class PostTemplate extends React.Component {
-  constructor(props) {
-    super(props);
+  constructor (props) {
+    super (props);
     this.state = {
-      mobile: true
+      mobile: true,
     };
-    this.handleResize = this.handleResize.bind(this);
+    this.handleResize = this.handleResize.bind (this);
   }
-  componentDidMount() {
-    this.handleResize();
-    window.addEventListener("resize", this.handleResize);
-  }
-
-  componentWillUnmount() {
-    window.removeEventListener("resize", this.handleResize);
+  componentDidMount () {
+    this.handleResize ();
+    window.addEventListener ('resize', this.handleResize);
   }
 
-  handleResize() {
+  componentWillUnmount () {
+    window.removeEventListener ('resize', this.handleResize);
+  }
+
+  handleResize () {
     if (window.innerWidth >= 640) {
-      this.setState({ mobile: false });
+      this.setState ({mobile: false});
     } else {
-      this.setState({ mobile: true });
+      this.setState ({mobile: true});
     }
   }
 
-  render() {
-    const { mobile } = this.state;
-    const { slug } = this.props.pageContext;
+  render () {
+    const {mobile} = this.state;
+    const {slug} = this.props.pageContext;
     const expanded = !mobile;
     const postNode = this.props.data.markdownRemark;
     const post = postNode.frontmatter;
@@ -69,14 +69,12 @@ export default class PostTemplate extends React.Component {
             coverHeight={coverHeight}
             coverClassName="md-grid md-cell--9 post-cover"
           />
-          <div
-            className={"md-grid md-cell--9 post-page-contents mobile-fix"}
-          >
+          <div className={'md-grid md-cell--9 post-page-contents mobile-fix'}>
             <Card className="md-grid md-cell md-cell--12 post">
               <CardText className="post-body">
                 <h1 className="md-display-2 post-header">{post.title}</h1>
                 <PostInfo postNode={postNode} />
-                <div dangerouslySetInnerHTML={{ __html: postNode.html }} />
+                <div dangerouslySetInnerHTML={{__html: postNode.html}} />
               </CardText>
               <div className="post-meta">
                 <PostTags tags={post.tags} />
@@ -94,7 +92,7 @@ export default class PostTemplate extends React.Component {
               expanded={expanded}
             />
           </div>
-          <ScrollToTopIcon/>
+          <ScrollToTopIcon />
           <PostSuggestions postNode={postNode} />
         </div>
       </Layout>

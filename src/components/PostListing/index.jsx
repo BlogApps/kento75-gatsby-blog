@@ -1,6 +1,6 @@
 import React from 'react';
 import PostPreview from '../PostPreview';
-import TagList from '../TagList';
+// import TagList from '../TagList';
 import './PostListing.scss';
 
 class PostListing extends React.Component {
@@ -27,9 +27,9 @@ class PostListing extends React.Component {
           {postList.map (post => (
             <PostPreview key={post.title} postInfo={post} />
           ))}
-          <span className="tagList-area">
+          {/* <span className="tagList-area">
             <TagList postList={postList} />
-          </span>
+          </span> */}
         </div>
       </div>
     );

@@ -8,10 +8,28 @@ import SEO from '../components/SEO';
 import ScrollToTopIcon from '../components/ScrollToTopIcon';
 import config from '../../data/SiteConfig';
 import Paginator from '../components/Paginator';
+import TagList from '../components/TagList';
 
 class Index extends React.Component {
+  getPostList (postEdges) {
+    const postList = [];
+    postEdges.forEach (postEdge => {
+      postList.push ({
+        path: postEdge.node.fields.slug,
+        tags: postEdge.node.frontmatter.tags,
+        cover: postEdge.node.frontmatter.cover,
+        title: postEdge.node.frontmatter.title,
+        date: postEdge.node.fields.date,
+        excerpt: postEdge.node.excerpt,
+        timeToRead: postEdge.node.timeToRead,
+      });
+    });
+    return postList;
+  }
   render () {
     const postEdges = this.props.data.allMarkdownRemark.edges;
+    const postList = this.getPostList (postEdges);
+
     return (
       <Layout location={this.props.location} title={<HeaderTitle />}>
         <div className="index-container">
@@ -22,6 +40,9 @@ class Index extends React.Component {
           <SEO postEdges={postEdges} />
           <PostListing postEdges={postEdges} />
           <Paginator pageContext={this.props.pageContext} />
+          <span className="tagList-area">
+            <TagList postList={postList} />
+          </span>;
           <ScrollToTopIcon />
         </div>
       </Layout>

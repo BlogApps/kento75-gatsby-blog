@@ -160,7 +160,7 @@ exports.createPages = ({
         const tagSet = new Set();
         const categorySet = new Set();
         const posts = result.data.allMarkdownRemark.edges;
-        const postsPerPage = 10;
+        const postsPerPage = 5;
         const numPages = Math.ceil(posts.length / postsPerPage);
         Array.from({
           length: numPages
