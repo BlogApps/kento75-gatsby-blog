@@ -85,33 +85,38 @@ $phone-status-bar-height: 24px - 12px;
                 margin-top: 15px;
             }
 
-            >div>h1{
+            >div>h1 {
                 margin: 0;
                 max-width: 100%;
                 word-wrap: break-word;
                 white-space: normal;
+
                 @media (max-width: 840px - 1px) {
                     font-size: 17px;
                     font-weight: bold;
                     word-wrap: break-word;
                 }
             }
+
             >div>h2 {
                 margin: 0;
                 max-width: 100%;
                 word-wrap: break-word;
                 white-space: normal;
+
                 @media (max-width: 840px - 1px) {
                     font-size: 16px;
                     font-weight: bold;
                     word-wrap: break-word;
                 }
             }
+
             >div>h3 {
                 margin: 0;
                 max-width: 100%;
                 word-wrap: break-word;
                 white-space: normal;
+
                 @media (max-width: 840px - 1px) {
                     font-size: 15px;
                     font-weight: bold;
@@ -165,5 +170,11 @@ $phone-status-bar-height: 24px - 12px;
                 margin: -($md-toolbar-mobile-portrait-height + $phone-status-bar-height) 0 0;
             }
         }
+    }
+}
+
+h2.md-card-title--title.md-card-title--large.md-text {
+    @media (max-width: 840px - 1px) {
+        font-size: 16px;
     }
 }
