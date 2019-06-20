@@ -3,6 +3,8 @@ const urljoin = require("url-join");
 
 const regexExcludeRobots = /^(?!\/(dev-404-page|404|offline-plugin-app-shell-fallback|tags|categories)).*$/;
 
+const siteGATrackingID = process.env.GOOGLE_ANALITICS || config.siteGATrackingID;
+
 module.exports = {
   pathPrefix: config.pathPrefix,
   siteMetadata: {
@@ -46,8 +48,7 @@ module.exports = {
     {
       resolve: "gatsby-transformer-remark",
       options: {
-        plugins: [
-          {
+        plugins: [{
             resolve: "gatsby-remark-relative-images"
           },
           {
@@ -68,7 +69,7 @@ module.exports = {
     {
       resolve: "gatsby-plugin-google-analytics",
       options: {
-        trackingId: config.siteGATrackingID
+        trackingId: siteGATrackingID
       }
     },
     {
@@ -121,8 +122,7 @@ module.exports = {
         background_color: "#e0e0e0",
         theme_color: "#c62828",
         display: "minimal-ui",
-        icons: [
-          {
+        icons: [{
             src: "/logos/kento75-circle.png",
             sizes: "192x192",
             type: "image/jpg"
@@ -135,7 +135,7 @@ module.exports = {
         ]
       }
     },
-    "gatsby-plugin-favicon",  // default root /src add a favicon.png
+    "gatsby-plugin-favicon", // default root /src add a favicon.png
     "gatsby-plugin-offline",
     {
       resolve: "gatsby-plugin-feed",
@@ -162,21 +162,24 @@ module.exports = {
           }
         }
       `,
-        feeds: [
-          {
-            serialize(ctx) {
-              const { rssMetadata } = ctx.query.site.siteMetadata;
-              return ctx.query.allMarkdownRemark.edges.map(edge => ({
-                categories: edge.node.frontmatter.tags,
-                date: edge.node.frontmatter.date,
-                title: edge.node.frontmatter.title,
-                description: edge.node.excerpt,
-                url: rssMetadata.site_url + edge.node.fields.slug,
-                guid: rssMetadata.site_url + edge.node.fields.slug,
-                custom_elements: [{ "content:encoded": edge.node.html }]
-              }));
-            },
-            query: `
+        feeds: [{
+          serialize(ctx) {
+            const {
+              rssMetadata
+            } = ctx.query.site.siteMetadata;
+            return ctx.query.allMarkdownRemark.edges.map(edge => ({
+              categories: edge.node.frontmatter.tags,
+              date: edge.node.frontmatter.date,
+              title: edge.node.frontmatter.title,
+              description: edge.node.excerpt,
+              url: rssMetadata.site_url + edge.node.fields.slug,
+              guid: rssMetadata.site_url + edge.node.fields.slug,
+              custom_elements: [{
+                "content:encoded": edge.node.html
+              }]
+            }));
+          },
+          query: `
             {
               allMarkdownRemark(
                 limit: 1000,
@@ -200,9 +203,8 @@ module.exports = {
               }
             }
           `,
-            output: config.siteRss
-          }
-        ]
+          output: config.siteRss
+        }]
       }
     }
   ]
