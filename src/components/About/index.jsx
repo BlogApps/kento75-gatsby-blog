@@ -31,6 +31,7 @@ class About extends Component {
                 className="about-img"
                 alt={config.userName}
               />
+              <a href="https://www.certmetrics.com/amazon/public/badge.aspx?i=1&t=c&d=2019-02-22&ci=AWS00789666" />
               <p className="about-text md-body-1">
                 {/* 改行コードごとにbrタグを生成 */}
                 {config.userDescription.split ('\n').map ((message, rowNo) => (
