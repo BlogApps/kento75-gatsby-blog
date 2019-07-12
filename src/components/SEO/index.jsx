@@ -1,69 +1,69 @@
-import React, { Component } from "react";
-import Helmet from "react-helmet";
-import urljoin from "url-join";
-import config from "../../../data/SiteConfig";
+import React, {Component} from 'react';
+import Helmet from 'react-helmet';
+import urljoin from 'url-join';
+import config from '../../../data/SiteConfig';
 
 class SEO extends Component {
-  render() {
-    const { postNode, postPath, postSEO } = this.props;
+  render () {
+    const {postNode, postPath, postSEO} = this.props;
     let title;
     let description;
     let image;
     let postURL;
     if (postSEO) {
       const postMeta = postNode.frontmatter;
-      ({ title } = postMeta);
+      ({title} = postMeta);
       description = postMeta.description
         ? postMeta.description
         : postNode.excerpt;
       image = postMeta.cover;
-      postURL = urljoin(config.siteUrl, config.pathPrefix, postPath);
+      postURL = urljoin (config.siteUrl, config.pathPrefix, postPath);
     } else {
       title = config.siteTitle;
       description = config.siteDescription;
       image = config.siteLogo;
     }
-    image = urljoin(config.siteUrl, config.pathPrefix, image);
-    const blogURL = urljoin(config.siteUrl, config.pathPrefix);
+    image = urljoin (config.siteUrl, config.pathPrefix, image);
+    const blogURL = urljoin (config.siteUrl, config.pathPrefix);
     const schemaOrgJSONLD = [
       {
-        "@context": "http://schema.org",
-        "@type": "WebSite",
+        '@context': 'http://schema.org',
+        '@type': 'WebSite',
         url: blogURL,
         name: title,
-        alternateName: config.siteTitleAlt ? config.siteTitleAlt : ""
-      }
+        alternateName: config.siteTitleAlt ? config.siteTitleAlt : '',
+      },
     ];
     if (postSEO) {
-      schemaOrgJSONLD.push([
+      schemaOrgJSONLD.push ([
         {
-          "@context": "http://schema.org",
-          "@type": "BreadcrumbList",
+          '@context': 'http://schema.org',
+          '@type': 'BreadcrumbList',
           itemListElement: [
             {
-              "@type": "ListItem",
+              '@type': 'ListItem',
               position: 1,
               item: {
-                "@id": postURL,
+                '@id': postURL,
                 name: title,
-                image
-              }
-            }
-          ]
+                image,
+              },
+            },
+          ],
         },
         {
-          "@context": "http://schema.org",
-          "@type": "BlogPosting",
+          '@context': 'http://schema.org',
+          '@type': 'BlogPosting',
           url: blogURL,
           name: title,
-          alternateName: config.siteTitleAlt ? config.siteTitleAlt : "",
+          alternateName: config.siteTitleAlt ? config.siteTitleAlt : '',
           headline: title,
           image: {
-            "@type": "ImageObject",
-            url: image
+            '@type': 'ImageObject',
+            url: image,
           },
-          description
-        }
+          description,
+        },
       ]);
     }
     return (
@@ -74,7 +74,7 @@ class SEO extends Component {
 
         {/* Schema.org tags */}
         <script type="application/ld+json">
-          {JSON.stringify(schemaOrgJSONLD)}
+          {JSON.stringify (schemaOrgJSONLD)}
         </script>
 
         {/* OpenGraph tags */}
@@ -85,18 +85,19 @@ class SEO extends Component {
         <meta property="og:image" content={image} />
         <meta
           property="fb:app_id"
-          content={config.siteFBAppID ? config.siteFBAppID : ""}
+          content={config.siteFBAppID ? config.siteFBAppID : ''}
         />
 
         {/* Twitter Card tags */}
         <meta name="twitter:card" content="summary_large_image" />
         <meta
           name="twitter:creator"
-          content={config.userTwitter ? config.userTwitter : ""}
+          content={config.userTwitter ? config.userTwitter : ''}
         />
         <meta name="twitter:title" content={title} />
         <meta name="twitter:description" content={description} />
         <meta name="twitter:image" content={image} />
+        <html lang="ja" />
       </Helmet>
     );
   }
