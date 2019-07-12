@@ -123,14 +123,14 @@ module.exports = {
         theme_color: "#c62828",
         display: "minimal-ui",
         icons: [{
-            src: "/logos/kento75-circle.png",
+            src: "/logos/kento75-circle-192x192.png",
             sizes: "192x192",
-            type: "image/jpg"
+            type: "image/png"
           },
           {
-            src: "/logos/kento75-circle.png",
+            src: "/logos/kento75-circle-512x512.png",
             sizes: "512x512",
-            type: "image/jpg"
+            type: "image/png"
           }
         ]
       }
