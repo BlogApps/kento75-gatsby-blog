@@ -11,24 +11,21 @@ import Paginator from '../components/Paginator';
 import TagList from '../components/TagList';
 
 class Index extends React.Component {
-  getPostList (postEdges) {
-    const postList = [];
-    postEdges.forEach (postEdge => {
-      postList.push ({
-        path: postEdge.node.fields.slug,
-        tags: postEdge.node.frontmatter.tags,
-        cover: postEdge.node.frontmatter.cover,
-        title: postEdge.node.frontmatter.title,
-        date: postEdge.node.fields.date,
-        excerpt: postEdge.node.excerpt,
-        timeToRead: postEdge.node.timeToRead,
-      });
+  getTagList(postEdges) {
+    const tagList = [];
+    postEdges.forEach(postEdge => {
+      for (const tag of postEdge.node.frontmatter.tags) {
+        tagList.push({
+          tags: tag
+        });
+      }
     });
-    return postList;
+    return tagList;
   }
-  render () {
+
+  render() {
     const postEdges = this.props.data.allMarkdownRemark.edges;
-    const postList = this.getPostList (postEdges);
+    const tagList = this.getTagList(postEdges);
 
     return (
       <Layout location={this.props.location} title={<HeaderTitle />}>
@@ -41,7 +38,7 @@ class Index extends React.Component {
           <PostListing postEdges={postEdges} />
           <Paginator pageContext={this.props.pageContext} />
           <span className="tagList-area">
-            <TagList postList={postList} />
+            <TagList tagList={tagList} />
           </span>
           <ScrollToTopIcon />
         </div>
