@@ -33,8 +33,6 @@ Ubuntuのイメージを解凍するして、virtualboxで読み込む。
 
 ![virtual-box2](/assets/virtualbox-2.png)
 
-
-
 ## イメージの起動とホストからのSSH接続用の設定
 
 イメージを起動して、先ほどメモしたパスワードでログインする。
