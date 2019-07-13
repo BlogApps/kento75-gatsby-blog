@@ -17,7 +17,7 @@ $ brew cask install virtualbox
 
 ## Ubuntuイメージを取得する
 
-イメージは、`https://www.osboxes.org/virtualbox-images/`のものを使用(今回はUbuntu16.04)
+イメージは、<https://www.osboxes.org/virtualbox-images/>のものを使用(今回はUbuntu16.04)
 
 パスワードもメモしておく。
 
