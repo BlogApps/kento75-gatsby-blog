@@ -6,6 +6,8 @@ slug: AWS RedHat7.6(HVM)にTomcat9を入れてみた時の備忘録
 category: プログラミング
 tags:
   - Tomcat
+  - AWS
+  - RHEL
 ---
 前回のOracle JDKのインストールに引き続き、  
 AWS環境にアプリケーション・Webサーバーを作成する際に設定したことのメモです。
