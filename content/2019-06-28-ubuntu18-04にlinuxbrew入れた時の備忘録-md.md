@@ -6,6 +6,8 @@ slug: Ubuntu18.04にLinuxbrew入れた時の備忘録
 category: プログラミング
 tags:
   - Linux
+  - Linuxbrew
+  - Ubuntu
 ---
 ## Linuxbrewとは
 
