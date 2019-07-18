@@ -8,6 +8,7 @@ tags:
   - Linux
   - Mac
   - VirtualBox
+  - Ubuntu
 ---
 homebrewでVirtualBoxをインストール（caskオプションを使用するとGUIもセットでインストールされる）
 
