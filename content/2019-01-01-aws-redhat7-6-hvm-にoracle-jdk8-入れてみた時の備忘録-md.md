@@ -6,6 +6,8 @@ slug: AWS RedHat7.6(HVM)にOracle JDK8 入れてみた時の備忘録
 category: プログラミング
 tags:
   - Java
+  - RHEL
+  - AWS
 ---
 AWS環境にアプリケーション・Webサーバーを作成する際に設定したことのメモ。
 
