@@ -6,6 +6,8 @@ slug: AWS RedHat7.6 に Apache をインストールした時の備忘録
 category: プログラミング
 tags:
   - Apache
+  - RHEL
+  - AWS
 ---
 AWS環境にアプリケーション・Webサーバーを作成する際に設定したことのメモ。
 
