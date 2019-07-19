@@ -8,6 +8,7 @@ tags:
   - Linux
   - VirtualBox
   - GitLab
+  - CentOS
 ---
 ## 使うもの
 
