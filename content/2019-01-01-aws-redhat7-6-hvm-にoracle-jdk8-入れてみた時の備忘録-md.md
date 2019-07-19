@@ -8,6 +8,7 @@ tags:
   - Java
   - RHEL
   - AWS
+  - Linux
 ---
 AWS環境にアプリケーション・Webサーバーを作成する際に設定したことのメモ。
 
