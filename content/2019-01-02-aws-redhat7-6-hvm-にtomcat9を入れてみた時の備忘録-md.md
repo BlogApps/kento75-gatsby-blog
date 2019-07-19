@@ -8,6 +8,7 @@ tags:
   - Tomcat
   - AWS
   - RHEL
+  - Linux
 ---
 前回のOracle JDKのインストールに引き続き、  
 AWS環境にアプリケーション・Webサーバーを作成する際に設定したことのメモです。
