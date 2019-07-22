@@ -12,7 +12,7 @@ module.exports = {
   siteGATrackingID: "", // Tracking code ID for google analytics.
   headerTitle: "overreact",
   postDefaultCategoryID: "プログラミング", // Default category for posts.
-  dateFromFormat: "YYYY-MM-DD", // Date format used in the frontmatter.
+  dateFromFormat: "YYYY-MM-DD HH:mm:ss", // Date format used in the frontmatter.
   dateFormat: "YYYY/MM/DD", // Date format for display.
   addTime: 9, // Netlifyではタイムゾーンが設定できないため一律 9時間プラスする
   userName: "Kento75", // Username to display in the author segment.
