@@ -8,7 +8,6 @@ tags:
   - Apache
   - Linux
   - AWS
-  - セキュリティ
 ---
 ## Webブラウザの種類で制限をかける
 
