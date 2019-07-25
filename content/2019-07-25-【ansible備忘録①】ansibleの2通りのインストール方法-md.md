@@ -17,7 +17,7 @@ tags:
 
 
 <br>
-
+<br>
 
 
 ## yum でインストール
@@ -26,6 +26,7 @@ tags:
 
 
 
+<br>
 <br>
 
 
@@ -67,7 +68,7 @@ ansible 2.4.6.0
 ```
 
 
-
+<br>
 <br>
 
 
@@ -77,7 +78,7 @@ ansible 2.4.6.0
 こちらのインストール方法では、最新のバージョンをインストールできる。
 
 
-
+<br>
 <br>
 
 
@@ -91,7 +92,7 @@ $ sudo yum -y install gcc gcc-c++ make git openssl-devel bzip2-devel zlib-devel 
 ```
 
 
-
+<br>
 <br>
 
 
@@ -116,7 +117,7 @@ $ sudo chown -R ec2-user:ec2-user /usr/bin/.pyenv
 ```
 
 
-
+<br>
 <br>
 
 
@@ -149,7 +150,7 @@ $ source ~/.bashrc
 ```
 
 
-
+<br>
 <br>
 
 
@@ -201,7 +202,7 @@ Installed Python-3.6.9 to /usr/bin/.pyenv/versions/3.6.9
 ```
 
 
-
+<br>
 <br>
 
 
@@ -216,8 +217,9 @@ Python 2.7.16
 ```
 
 
-
 <br>
+<br>
+
 
 pyenv でデフォルトで使用する Python を3に固定する。
 
@@ -228,6 +230,9 @@ $ python -V
 Python 3.6.9
 ```
 
+
+<br>
+<br>
 
 
 ### Ansible をインストール
@@ -241,7 +246,7 @@ $ pip install --user ansible
 
 
 <br>
-
+<br>
 
 
 これで最新バージョンが使える。
@@ -259,10 +264,10 @@ ansible 2.8.2
 
 
 <br>
+<br>
 
 
-
-### おまけ：pyenv-virtualenv の追加
+### おまけ pyenv-virtualenv の追加
 
 
 
@@ -275,7 +280,7 @@ $ git clone https://github.com/yyuu/pyenv-virtualenv.git /usr/bin/.pyenv/plugins
 
 
 <br>
-
+<br>
 
 
 pyenv-virtualenv 用の設定を追加する。
@@ -301,7 +306,7 @@ $ source ~/.bashrc
 
 
 <br>
-
+<br>
 
 
 動作確認を確認する。
@@ -324,6 +329,7 @@ $ pyenv versions
 
 
 
+<br>
 <br>
 
 
