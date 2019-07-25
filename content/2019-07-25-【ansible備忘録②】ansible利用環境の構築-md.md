@@ -17,7 +17,7 @@ tags:
 
 
 <br>
-
+<br>
 
 
 ・Ansible運用ユーザーの作成
@@ -31,7 +31,7 @@ tags:
 
 
 <br>
-
+<br>
 
 
 ### Ansible運用ユーザーの作成
@@ -49,7 +49,7 @@ $ sudo passwd ansible
 
 
 <br>
-
+<br>
 
 
 Ansible実行用ユーザーでも pyenv でインストールした Python を使用できるようにする。
@@ -94,7 +94,7 @@ $ pip install --user ansible
 ```
 
 
-
+<br>
 <br>
 
 
@@ -106,7 +106,7 @@ Ansibleはターゲット（ホスト、ネットワーク機器etc）に対し�
 SSHにユーザー名とパスワードを利用せず、鍵認証でやる方がセキュアなのでなるべく鍵認証にする。
 
 
-
+<br>
 <br>
 
 
@@ -139,7 +139,7 @@ $ sudo service sshd restart
 ```
 
 
-
+<br>
 <br>
 
 
@@ -179,7 +179,7 @@ and check to make sure that only the key(s) you wanted were added.
 ```
 
 
-
+<br>
 <br>
 
 
@@ -192,7 +192,7 @@ $  mkdir -vp ansible_work/sec2/inventory/
 ```
 
 
-
+<br>
 <br>
 
 
@@ -204,7 +204,7 @@ Ansibleの設定ファイルであるansible.cfgは、置く場所によって�
 以下の順番で検索される。
 
 
-
+<br>
 <br>
 
 
@@ -218,7 +218,7 @@ Ansibleの設定ファイルであるansible.cfgは、置く場所によって�
 4)/etc/ansible/ansible.cfg
 
 
-
+<br>
 <br>
 
 
@@ -230,7 +230,7 @@ pip だと設定ファイルは存在しない。
 どちらにしてもAnsible実行用ユーザーのホームディレクトリに設定ファイルを作成した方が運用しやすいのでホームディレクトリへの配置がオススメ。
 
 
-
+<br>
 <br>
 
 
@@ -253,7 +253,7 @@ gathering = smart
 ```
 
 
-
+<br>
 <br>
 
 
@@ -274,7 +274,7 @@ gathering = smart
 
 
 <br>
-
+<br>
 
 
 ログ出力先のディレクトリを作成しておく。
@@ -284,7 +284,7 @@ $ mkdir $HOME/.ansible
 ```
 
 
-
+<br>
 <br>
 
 
@@ -295,6 +295,7 @@ $ mkdir $HOME/.ansible
 
 
 
+<br>
 <br>
 
 
@@ -318,7 +319,7 @@ localhost
 ```
 
 
-
+<br>
 <br>
 
 
@@ -352,7 +353,7 @@ localhost | SUCCESS => {
 ```
 
 
-
+<br>
 <br>
 
 
@@ -364,7 +365,7 @@ localhost | SUCCESS => {
 試しに、プレイブックで、ターゲットノードを操作してみる。
 
 
-
+<br>
 <br>
 
 
@@ -385,7 +386,7 @@ ec2-xxx-xxx-xxx-xxx.ap-northeast-1.compute.amazonaws.com ansible_ssh_user=ec2-us
 ```
 
 
-
+<br>
 <br>
 
 
@@ -418,7 +419,7 @@ $ vi $HOME/ansible_work/sec2/test_playbook.yml
 ```
 
 
-
+<br>
 <br>
 
 
@@ -444,7 +445,7 @@ ec2-3-112-221-13.ap-northeast-1.compute.amazonaws.com : ok=3    changed=2    unr
 ```
 
 
-
+<br>
 <br>
 
 
