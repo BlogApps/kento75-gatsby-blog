@@ -352,6 +352,18 @@ localhost | SUCCESS => {
 }
 ```
 
+<br>
+<br>
+
+
+補足
+インベントリの設定に、Pythonインタプリタのパスを明示的に設定したらインタプリタの警告は出なくなった。
+
+```
+[test_servers]
+localhost ansible_python_interpreter=/usr/bin/.pyenv/shims/python
+```
+
 
 <br>
 <br>
