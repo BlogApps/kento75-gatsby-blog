@@ -378,11 +378,12 @@ $ vi $HOME/ansible_work/sec2/inventory/test02_inventory.ini
 
 パブリックDNSを設定。
 
-「ansible_ssh_user」を使用してログインユーザー名を指定しておく。
+~~「ansible_ssh_user」~~「ansible_user」を使用してログインユーザー名を指定しておく。
+※ 「ansible_ssh_user」は、バージョン2.8以降は非推奨になりそうなので、全く同じ機能をもつ「ansible_user」を使用する。
 
 ```
 [test_servers]
-ec2-xxx-xxx-xxx-xxx.ap-northeast-1.compute.amazonaws.com ansible_ssh_user=ec2-user
+ec2-xxx-xxx-xxx-xxx.ap-northeast-1.compute.amazonaws.com ansible_user=ec2-user
 ```
 
 
