@@ -382,7 +382,7 @@ $ vi $HOME/ansible_work/sec2/inventory/test02_inventory.ini
 
 ```
 [test_servers]
-ec2-xxx-xxx-xxx-xxx.ap-northeast-1.compute.amazonaws.com ansible_ssh_user=ec2-user
+ec2-xxx-xxx-xxx-xxx.ap-northeast-1.compute.amazonaws.com ansible_user=ec2-user
 ```
 
 
