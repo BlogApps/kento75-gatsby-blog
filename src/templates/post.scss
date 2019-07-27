@@ -128,9 +128,13 @@ $phone-status-bar-height: 24px - 12px;
              * Based on MUICSS's Table Component
              */
             table {
-                width: 100%;
-                max-width: 100%;
-                margin-bottom: 20px;
+                display: block;
+                overflow-x: scroll;
+                white-space: nowrap;
+                -webkit-overflow-scrolling: touch;
+                // width: 100%;
+                // max-width: 100%;
+                // margin-bottom: 20px;
             }
 
             table>thead>tr>th,
