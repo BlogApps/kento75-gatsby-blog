@@ -115,7 +115,7 @@ Targets セクションでは、プレイの中でターゲットノードの接
 | port           | ＜ポート番号＞                                               | 接続ポートの指定。                                           |
 | become         | true / false                                                 | 接続ユーザー以外で特権実行を行う。                           |
 | become_user    | ＜ユーザー名＞                                               | ターゲットノードで処理を行うユーザーを指定。                 |
-| become_method  | sudo / su / sesu / runas / pmrun / pfexec / pbrun / machinectl / ksu / enable / dzdo / doas | ターゲットノードで処理を行うコマンドを指定。<br />デフォルトでは、「sudo」が利用される。<br />「sudo」以外を利用することはあまりないと思う。 |
+| become_method  | sudo / su / sesu <br /> runas / pmrun / pfexec <br /> pbrun / machinectl / ksu <br /> enable / dzdo / doas | ターゲットノードで処理を行うコマンドを指定。<br />デフォルトでは、「sudo」が利用される。<br />「sudo」以外を利用することはあまりないと思う。 |
 
 <br>
 <br>
