@@ -1,27 +1,26 @@
-import React from "react";
-import Helmet from "react-helmet";
-import { graphql } from "gatsby";
-import Layout from "../layout";
-import PostListing from "../components/PostListing";
-import HeaderTitle from "../components/HeaderTitle";
-import config from "../../data/SiteConfig";
+import React from 'react';
+import Helmet from 'react-helmet';
+import {graphql} from 'gatsby';
+import Layout from '../layout';
+import PostListing from '../components/PostListing';
+import HeaderTitle from '../components/HeaderTitle';
+import ScrollToTopIcon from '../components/ScrollToTopIcon';
+import config from '../../data/SiteConfig';
 
 export default class TagTemplate extends React.Component {
   render() {
-    const { tag } = this.props.pageContext;
+    const {tag} = this.props.pageContext;
     const postEdges = this.props.data.allMarkdownRemark.edges;
 
     return (
-      <Layout
-        location={this.props.location}
-        title={<HeaderTitle/>}
-      >
+      <Layout location={this.props.location} title={<HeaderTitle />}>
         <div className="tag-container">
           <Helmet>
             <title>{`Posts tagged as "${tag}" | ${config.siteTitle}`}</title>
             <link rel="canonical" href={`${config.siteUrl}/tags/${tag}`} />
           </Helmet>
           <PostListing postEdges={postEdges} />
+          <ScrollToTopIcon />
         </div>
       </Layout>
     );
@@ -32,8 +31,8 @@ export const pageQuery = graphql`
   query TagPage($tag: String) {
     allMarkdownRemark(
       limit: 1000
-      sort: { fields: [fields___date], order: DESC }
-      filter: { frontmatter: { tags: { in: [$tag] } } }
+      sort: {fields: [fields___date], order: DESC}
+      filter: {frontmatter: {tags: {in: [$tag]}}}
     ) {
       totalCount
       edges {
