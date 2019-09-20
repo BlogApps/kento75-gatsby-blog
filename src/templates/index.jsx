@@ -25,7 +25,7 @@ class Index extends React.Component {
 
   render() {
     const postEdges = this.props.data.allMarkdownRemark.edges;
-    const tagList = this.getTagList(postEdges);
+    const tagList = this.getTagList(this.props.data.tagList.edges);
 
     return (
       <Layout location={this.props.location} title={<HeaderTitle />}>
@@ -69,6 +69,18 @@ export const pageQuery = graphql`
             tags
             cover
             date
+          }
+        }
+      }
+    }
+
+    tagList: allMarkdownRemark(
+      sort: {fields: [fields___date], order: DESC}
+    ) {
+      edges {
+        node {
+          frontmatter {
+            tags
           }
         }
       }
