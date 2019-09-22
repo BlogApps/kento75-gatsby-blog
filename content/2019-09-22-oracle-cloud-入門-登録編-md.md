@@ -7,7 +7,7 @@ category: プログラミング
 tags:
   - Oracle Cloud
 ---
-\## Oracle Cloud とは
+## Oracle Cloud とは
 
 <br>
 
@@ -19,11 +19,11 @@ VM2つ(CPU1コア x 2)とブロックストレージ合計100GB、ファイル�
 
 <br><br>
 
-\## 新規で登録する
+## 新規で登録する
 
 <br>
 
-\[こちら](https://www.oracle.com/jp/cloud/free/) から無料登録ページへ
+[こちら](https://www.oracle.com/jp/cloud/free/) から無料登録ページへ
 
 ![oracle-cloud-regist-1](/assets/s_oracle-cloud-regist-1.jpg)
 
