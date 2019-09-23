@@ -60,8 +60,6 @@ Oracle Cloudに限ったことではなく、AWSやGCP、Azureでもこの設定
 
 <br><br>
 
-
-
 ### ログイン確認
 
 <br>
