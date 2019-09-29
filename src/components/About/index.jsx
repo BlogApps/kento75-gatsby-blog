@@ -25,7 +25,7 @@ class About extends Component {
         <Card className="md-grid md-cell--8">
           <div className="about-wrapper">
             <CardText>
-              <h2>Kento75 プロフィール</h2>
+              <h2 className="about-title">Kento75 プロフィール</h2>
               <img
                 src={config.userAvatar}
                 className="about-img"
@@ -33,7 +33,6 @@ class About extends Component {
               />
               <a href="https://www.certmetrics.com/amazon/public/badge.aspx?i=1&t=c&d=2019-02-22&ci=AWS00789666" />
               <p className="about-text md-body-1">
-                {/* 改行コードごとにbrタグを生成 */}
                 {config.userDescription.split ('\n').map ((message, rowNo) => (
                   <span key={rowNo}>
                     {message}
@@ -41,22 +40,18 @@ class About extends Component {
                   </span>
                 ))}
               </p>
-              <h2>経歴</h2>
+              <h3>経歴</h3>
               <p>
                 詳細はLinkedInに記述していますので、こちらを参照願います。
                 <br />
                 <a href={myLinkedinUrl}>» LinkedIn(Kento75)</a>
               </p>
-              <h2>その他</h2>
+              <h3>その他</h3>
               <p className="about-text md-body-2">
                 気が向いた時にLTしたりしてます。
                 <br />
                 <a href={mySpeakerDeckUrl}>» SpeakerDeck(Kento75)</a>
                 <br /><br />
-                {/* Findyのスキル偏差値とやらはこちらです。
-                <br />
-                <a href={myFindySkillUrl}>» FindySkillSheet(Kento75)</a>
-                <br /><br /> */}
                 あまり活動していませんが、Teratailでの質問に回答したりしてます。
                 <br />
                 <a href={myTeratailUrl}>» Teratail(Kento75)</a>
