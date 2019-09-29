@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import _ from 'lodash';
+import kebabCase from 'lodash.kebabCase';
 import {Link} from 'gatsby';
 import Chip from 'react-md/lib/Chips';
 import './PostTags.scss';
@@ -14,7 +14,7 @@ class PostTags extends Component {
         <Link
           key={tag}
           style={{textDecoration: 'none'}}
-          to={`/tags/${_.kebabCase (tag)}`}
+          to={`/tags/${kebabCase (tag)}`}
         >
           <Chip label={tag} className="post-preview-tags" />
         </Link>
