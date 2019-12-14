@@ -1,5 +1,7 @@
 User-agent: *
+Allow: /post/assets
+Allow: /post/logos
 Disallow: */tags/
 Disallow: */categories/
 
-sitemap: https://https://kento75blog.netlify.com/post/sitemap.xml
+sitemap: https://kento75blog.netlify.com/post/sitemap.xml

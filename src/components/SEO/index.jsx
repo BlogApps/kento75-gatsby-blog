@@ -70,6 +70,7 @@ class SEO extends Component {
       <Helmet>
         {/* General tags */}
         <meta name="description" content={description} />
+        <meta property="og:type" content="blog" />
         <meta name="image" content={image} />
 
         {/* Schema.org tags */}
