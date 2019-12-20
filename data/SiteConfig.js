@@ -1,6 +1,6 @@
 module.exports = {
   siteTitle: "overreact", // Site title.
-  siteTitleShort: "雑食系フロントエンドエンジニアのブログ", // Short site title for homescreen (PWA). Preferably should be under 12 characters to prevent truncation.
+  siteTitleShort: "overreact | 元SEのブログ", // Short site title for homescreen (PWA). Preferably should be under 12 characters to prevent truncation.
   siteTitleAlt: "overreact", // Alternative site title for SEO.
   siteLogo: "/logos/logo.png", // Logo used for SEO and manifest.
   siteUrl: "https://overreact.tk", // Domain of your website without pathPrefix.
