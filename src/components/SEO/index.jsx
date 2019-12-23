@@ -4,7 +4,7 @@ import urljoin from 'url-join';
 import config from '../../../data/SiteConfig';
 
 class SEO extends Component {
-  render () {
+  render() {
     const {postNode, postPath, postSEO} = this.props;
     let title;
     let description;
@@ -17,14 +17,14 @@ class SEO extends Component {
         ? postMeta.description
         : postNode.excerpt;
       image = postMeta.cover;
-      postURL = urljoin (config.siteUrl, config.pathPrefix, postPath);
+      postURL = urljoin(config.siteUrl, config.pathPrefix, postPath);
     } else {
       title = config.siteTitle;
       description = config.siteDescription;
       image = config.siteLogo;
     }
-    image = urljoin (config.siteUrl, config.pathPrefix, image);
-    const blogURL = urljoin (config.siteUrl, config.pathPrefix);
+    image = urljoin(config.siteUrl, image);
+    const blogURL = urljoin(config.siteUrl, config.pathPrefix);
     const schemaOrgJSONLD = [
       {
         '@context': 'http://schema.org',
@@ -35,7 +35,7 @@ class SEO extends Component {
       },
     ];
     if (postSEO) {
-      schemaOrgJSONLD.push ([
+      schemaOrgJSONLD.push([
         {
           '@context': 'http://schema.org',
           '@type': 'BreadcrumbList',
@@ -75,7 +75,7 @@ class SEO extends Component {
 
         {/* Schema.org tags */}
         <script type="application/ld+json">
-          {JSON.stringify (schemaOrgJSONLD)}
+          {JSON.stringify(schemaOrgJSONLD)}
         </script>
 
         {/* OpenGraph tags */}
