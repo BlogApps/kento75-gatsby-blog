@@ -10,6 +10,7 @@ module.exports = {
   siteRss: "/rss.xml", // Path to the RSS file.
   siteFBAppID: "", // FB Application ID for using app insights
   siteGATrackingID: "", // Tracking code ID for google analytics.
+  disqusShortName: "overreact", // Disqus site name.
   headerTitle: "overreact",
   postDefaultCategoryID: "プログラミング", // Default category for posts.
   dateFromFormat: "YYYY-MM-DD HH:mm:ss", // Date format used in the frontmatter.

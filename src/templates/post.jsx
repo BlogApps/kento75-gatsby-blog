@@ -1,6 +1,7 @@
 import React from 'react';
 import Helmet from 'react-helmet';
 import {graphql} from 'gatsby';
+import {Disqus, CommentCount} from 'gatsby-plugin-disqus';
 import Card from 'react-md/lib/Cards';
 import CardText from 'react-md/lib/Cards/CardText';
 import Layout from '../layout';
@@ -18,31 +19,31 @@ import './b16-tomorrow-dark.css';
 import './post.scss';
 
 export default class PostTemplate extends React.Component {
-  constructor (props) {
-    super (props);
+  constructor(props) {
+    super(props);
     this.state = {
       mobile: true,
     };
-    this.handleResize = this.handleResize.bind (this);
+    this.handleResize = this.handleResize.bind(this);
   }
-  componentDidMount () {
-    this.handleResize ();
-    window.addEventListener ('resize', this.handleResize);
-  }
-
-  componentWillUnmount () {
-    window.removeEventListener ('resize', this.handleResize);
+  componentDidMount() {
+    this.handleResize();
+    window.addEventListener('resize', this.handleResize);
   }
 
-  handleResize () {
+  componentWillUnmount() {
+    window.removeEventListener('resize', this.handleResize);
+  }
+
+  handleResize() {
     if (window.innerWidth >= 640) {
-      this.setState ({mobile: false});
+      this.setState({mobile: false});
     } else {
-      this.setState ({mobile: true});
+      this.setState({mobile: true});
     }
   }
 
-  render () {
+  render() {
     const {mobile} = this.state;
     const {slug} = this.props.pageContext;
     const expanded = !mobile;
@@ -54,6 +55,12 @@ export default class PostTemplate extends React.Component {
     if (!post.category_id) {
       post.category_id = config.postDefaultCategoryID;
     }
+
+    let disqusConfig = {
+      url: `${config.siteUrl + location.pathname}`,
+      identifier: post.id,
+      title: post.title,
+    };
 
     const coverHeight = mobile ? 180 : 500;
     return (
@@ -91,6 +98,10 @@ export default class PostTemplate extends React.Component {
               config={config}
               expanded={expanded}
             />
+            <Card className="md-grid md-cell md-cell--12 post">
+              <CommentCount config={disqusConfig} placeholder={''} />
+              <Disqus config={disqusConfig} />
+            </Card>
           </div>
           <ScrollToTopIcon />
           <PostSuggestions postNode={postNode} />
@@ -102,7 +113,7 @@ export default class PostTemplate extends React.Component {
 
 export const pageQuery = graphql`
   query BlogPostBySlug($slug: String!) {
-    markdownRemark(fields: { slug: { eq: $slug } }) {
+    markdownRemark(fields: {slug: {eq: $slug}}) {
       html
       timeToRead
       excerpt
