@@ -70,5 +70,5 @@ module.exports = {
       url: "https://findy-code.io/share_profiles/rgEQehzENsgyR"
     }
   ],
-  copyright: "© 2019. Kento75" // Copyright string for the footer of the website and RSS feed.
+  copyright: "© 2020. Kento75" // Copyright string for the footer of the website and RSS feed.
 };

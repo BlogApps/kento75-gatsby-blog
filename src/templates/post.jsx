@@ -57,7 +57,7 @@ export default class PostTemplate extends React.Component {
     }
 
     let disqusConfig = {
-      url: `${config.siteUrl + location.pathname}`,
+      url: `${config.siteUrl + '/' + slug}`,
       identifier: post.id,
       title: post.title,
     };
