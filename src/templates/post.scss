@@ -129,12 +129,14 @@ $phone-status-bar-height: 24px - 12px;
              */
             table {
                 display: block;
-                overflow-x: scroll;
+                // overflow-x: scroll;
+                overflow-x: auto;
                 white-space: nowrap;
                 -webkit-overflow-scrolling: touch;
-                // width: 100%;
-                // max-width: 100%;
-                // margin-bottom: 20px;
+            }
+
+            table::-webkit-scrollbar {
+                display: none;
             }
 
             table>thead>tr>th,
