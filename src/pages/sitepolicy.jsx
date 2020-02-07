@@ -6,13 +6,13 @@ import HeaderTitle from '../components/HeaderTitle';
 import config from '../../data/SiteConfig';
 
 class SitePolicyPage extends Component {
-  render () {
+  render() {
     return (
       <Layout location={this.props.location} title={<HeaderTitle />}>
-        <div className="sitepolicy-container">
+        <div className='sitepolicy-container'>
           <Helmet>
-            <title>{`About | ${config.siteTitle}`}</title>
-            <link rel="canonical" href={`${config.siteUrl}/sitepolicy/`} />
+            <title>{`Site Policy | ${config.siteTitle}`}</title>
+            <link rel='canonical' href={`${config.siteUrl}/sitepolicy/`} />
           </Helmet>
           <SitePolicy />
         </div>
