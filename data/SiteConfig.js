@@ -6,7 +6,7 @@ module.exports = {
   siteUrl: "https://overreact.tk", // Domain of your website without pathPrefix.
   pathPrefix: "/post", // Prefixes all links. For cases when deployed to example.github.io/post/.
   fixedFooter: false, // Whether the footer component is fixed, i.e. always visible
-  siteDescription: "雑食系フロントエンドエンジニアのブログ", // Website description used for RSS feeds/meta description tag.
+  siteDescription: "元SEのブログ", // Website description used for RSS feeds/meta description tag.
   siteRss: "/rss.xml", // Path to the RSS file.
   siteFBAppID: "", // FB Application ID for using app insights
   siteGATrackingID: "", // Tracking code ID for google analytics.
@@ -20,7 +20,7 @@ module.exports = {
   userTwitter: "Kento751", // Optionally renders "Follow Me" in the UserInfo segment.
   userLocation: "日本, 埼玉県", // User location to display in the author segment.
   userAvatar: "/logos/kento75.jpg", // User avatar to display in the author segment.
-  userDescription: "都内で働くエンジニア フロントエンドからインフラまで幅広くやってます。 好きな技術は React と Firebase です。\nQiita でも記事を書いていますので、いいねもらえると嬉しいです(^_^)\nあと、好きな女優は新垣結衣です。", // User description to display in the author segment.
+  userDescription: "都内で働くエンジニア フロントエンドからインフラまで幅広くやってます。 好きな技術は React と AWS です。\nQiita でも記事を書いていますので、いいねもらえると嬉しいです(^_^)\nあと、好きな女優は新垣結衣です。", // User description to display in the author segment.
   // Links to social profiles/projects you want to display in the author segment/navigation bar.
   userLinks: [{
       label: "GitHub",
