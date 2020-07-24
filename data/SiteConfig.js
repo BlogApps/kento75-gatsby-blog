@@ -20,7 +20,7 @@ module.exports = {
   userTwitter: "Kento751", // Optionally renders "Follow Me" in the UserInfo segment.
   userLocation: "日本, 埼玉県", // User location to display in the author segment.
   userAvatar: "/logos/kento75.jpg", // User avatar to display in the author segment.
-  userDescription: "都内で働くエンジニア フロントエンドからインフラまで幅広くやってます。 好きな技術は React と AWS です。\nQiita でも記事を書いていますので、いいねもらえると嬉しいです(^_^)\nあと、好きな女優は新垣結衣です。", // User description to display in the author segment.
+  userDescription: "都内で働くエンジニア ゲーム会社でサーバーサイドの開発を担当しています。 好きな技術は Java と AWS です。\nQiita でも記事を書いていますので、いいねもらえると嬉しいです(^_^)\nあと、好きな女優は新垣結衣です。", // User description to display in the author segment.
   // Links to social profiles/projects you want to display in the author segment/navigation bar.
   userLinks: [{
       label: "GitHub",
