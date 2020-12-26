@@ -9,7 +9,7 @@ import PostTags from '../components/PostTags';
 import PostCover from '../components/PostCover';
 import PostInfo from '../components/PostInfo';
 import SocialLinks from '../components/SocialLinks';
-import PostSuggestions from '../components/PostSuggestions';
+// import PostSuggestions from '../components/PostSuggestions';
 import Disqus from '../components/Disqus';
 import HeaderTitle from '../components/HeaderTitle';
 import SEO from '../components/SEO';
@@ -97,7 +97,7 @@ export default class PostTemplate extends React.Component {
             </Card>
           </div>
           <ScrollToTopIcon />
-          <PostSuggestions postNode={postNode} />
+          {/* <PostSuggestions postNode={postNode} /> */}
         </div>
       </Layout>
     );
