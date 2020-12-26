@@ -13,4 +13,14 @@
 
 .sitepolicy-desc {
     margin-bottom: 30px;
+
+    @media (max-width: 400px - 1px) {
+        margin-left: 3%;
+    }
+
+    h3 {
+        @media (max-width: 400px - 1px) {
+          font-size: 16px;
+        }
+    }
 }
